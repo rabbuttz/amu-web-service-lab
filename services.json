@@ -6,6 +6,16 @@
     "published_at": "2026-08-06",
     "status": "active",
     "hypothesis": "短い集中タイマーに収集ループを加えると再訪が増える",
-    "metrics": ["visitors", "views", "returning_visitors", "start_clicks", "completed_expeditions"]
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
+    "id": "002-scope-canvas",
+    "title": "Scope Canvas",
+    "path": "/services/scope-canvas/",
+    "published_at": "2026-08-06T04:09:01Z",
+    "status": "active",
+    "hypothesis": "制作依頼前に納品物・修正・利用範囲を可視化できれば、クリエイターと依頼者の認識合わせの手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
   }
 ]

@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-08-06T04:09:01Z",
+  "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0",
+  "services": {
+    "focus-familiar": {
+      "visitor": {"value": 4, "delta": 4},
+      "view": {"value": 3, "delta": 3},
+      "start": {"value": 0, "delta": 0},
+      "complete": {"value": 0, "delta": 0}
+    }
+  }
+}
