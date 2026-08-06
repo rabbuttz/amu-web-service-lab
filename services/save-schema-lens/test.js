@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict');const L=require('./logic.js');
+const oldJson=JSON.stringify({version:1,player:{name:'A',level:4,coins:10},items:[{id:'potion',count:2}],legacy:true});
+const newJson=JSON.stringify({version:'2',player:{name:'A',level:'4',xp:0},items:[{id:'potion',count:2,quality:'normal'}]});
+const result=L.analyze(oldJson,newJson);
+assert.equal(result.high,4);assert.equal(result.low,2);assert.equal(result.verdict,'移行処理が必要');
+assert.ok(result.changes.some(x=>x.path==='$.version'&&x.kind==='type'));
+assert.ok(result.changes.some(x=>x.path==='$.legacy'&&x.kind==='removed'));
+assert.ok(result.changes.some(x=>x.path==='$.items[].quality'&&x.kind==='added'));
+assert.match(L.markdown(result),/旧データを複製/);
+assert.equal(L.analyze('{','{}').error,'旧バージョンのJSONを解析できないよ');
+assert.equal(L.analyze('{}','{').error,'新バージョンのJSONを解析できないよ');
+assert.equal(L.analyze('{"a":1}','{"a":2}').changes.length,0);
+console.log('PASS: JSON parsing, recursive schema diff, severity classification, array object inspection, migration checklist');

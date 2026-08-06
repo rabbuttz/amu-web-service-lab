@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-08-06T07:53:37Z",
-  "previous_observed_at": "2026-08-06T06:48:09Z",
-  "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0",
-  "caveat": "認証なしカウンターのため数値は方向性の参考値。一部GETはTLSタイムアウトしたため直前値を維持。既存4サービスの確認できた増分は0。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と改善は保留。Patch Note Forgeは公開前で0。",
+  "observed_at": "2026-08-06T09:11:56Z",
+  "previous_observed_at": "2026-08-06T07:53:37Z",
+  "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; transport timeouts retain the previous value",
+  "caveat": "認証なしカウンターのため数値は方向性の参考値。CounterAPIの接続上限エラー(400)は指定どおり0、通信タイムアウトは直前値を維持したため、負の増分は実利用の減少を意味しない。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と既存サービス改善は保留。Save Schema Lensは公開前で0。",
   "services": {
     "focus-familiar": {
       "visitor": {"value": 4, "previous": 4, "delta": 0},
@@ -12,23 +12,29 @@
     },
     "scope-canvas": {
       "visitor": {"value": 4, "previous": 4, "delta": 0},
-      "view": {"value": 4, "previous": 4, "delta": 0},
-      "start": {"value": 3, "previous": 3, "delta": 0},
-      "complete": {"value": 3, "previous": 3, "delta": 0}
+      "view": {"value": 4, "previous": 4, "delta": 0, "note": "transport timeout; previous retained"},
+      "start": {"value": 3, "previous": 3, "delta": 0, "note": "transport timeout; previous retained"},
+      "complete": {"value": 0, "previous": 3, "delta": -3, "note": "HTTP 400 treated as 0"}
     },
     "booth-balance": {
-      "visitor": {"value": 2, "previous": 2, "delta": 0},
+      "visitor": {"value": 0, "previous": 2, "delta": -2, "note": "HTTP 400 treated as 0"},
       "view": {"value": 2, "previous": 2, "delta": 0},
       "start": {"value": 1, "previous": 1, "delta": 0},
       "complete": {"value": 1, "previous": 1, "delta": 0}
     },
     "sprite-tempo": {
-      "visitor": {"value": 4, "previous": 4, "delta": 0},
+      "visitor": {"value": 4, "previous": 4, "delta": 0, "note": "transport timeout; previous retained"},
       "view": {"value": 4, "previous": 4, "delta": 0},
       "start": {"value": 1, "previous": 1, "delta": 0},
       "complete": {"value": 3, "previous": 3, "delta": 0}
     },
     "patch-note-forge": {
+      "visitor": {"value": 3, "previous": 0, "delta": 3},
+      "view": {"value": 0, "previous": 0, "delta": 0, "note": "transport timeout; previous retained"},
+      "start": {"value": 0, "previous": 0, "delta": 0, "note": "transport timeout; previous retained"},
+      "complete": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 400 treated as 0"}
+    },
+    "save-schema-lens": {
       "visitor": {"value": 0, "previous": 0, "delta": 0},
       "view": {"value": 0, "previous": 0, "delta": 0},
       "start": {"value": 0, "previous": 0, "delta": 0},

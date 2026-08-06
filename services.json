@@ -47,5 +47,15 @@
     "hypothesis": "生のコミットログを公開向けの分類済みMarkdownへ端末内で変換できれば、ゲームやWebサービスの更新告知作成を短縮できる",
     "primary_metric": "complete/start",
     "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
+    "id": "006-save-schema-lens",
+    "title": "Save Schema Lens",
+    "path": "/services/save-schema-lens/",
+    "published_at": "2026-08-06T09:11:56Z",
+    "status": "active",
+    "hypothesis": "更新前後のJSONセーブ例から破壊的なスキーマ差分と移行チェックリストを端末内で作れれば、ゲームやWebアプリのデータ更新事故を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
   }
 ]
