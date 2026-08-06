@@ -1,0 +1,11 @@
+const assert=require('assert'),L=require('./logic.js');
+let r=L.analyze({baseRate:.01,softStart:0,increase:0,hardPity:0,checkpoint:100});
+assert(Math.abs(r.chanceAtCheckpoint-(1-Math.pow(.99,100)))<1e-12);
+assert.strictEqual(r.median,69);assert.strictEqual(r.p90,230);assert(Math.abs(r.expected-100)<.001);
+r=L.analyze({baseRate:.01,softStart:50,increase:.02,hardPity:80,checkpoint:80});
+assert.strictEqual(r.chanceAtCheckpoint,1);assert(r.expected<80);assert(r.p99<=80);
+assert.strictEqual(L.probabilityAt(49,.01,50,.02,80),.01);
+assert.strictEqual(L.probabilityAt(50,.01,50,.02,80),.03);
+assert.strictEqual(L.probabilityAt(80,.01,50,.02,80),1);
+assert.strictEqual(L.percent(.634,1),'63.4%');
+console.log('Pity Curve logic: 9 assertions passed');

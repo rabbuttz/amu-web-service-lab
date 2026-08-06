@@ -1,5 +1,15 @@
 [
   {
+    "id": "007-pity-curve",
+    "title": "Pity Curve",
+    "path": "/services/pity-curve/",
+    "published_at": "2026-08-06T10:23:55Z",
+    "status": "active",
+    "hypothesis": "ドロップ率を平均値だけでなく累積分布と未入手人数で見せれば、ゲーム制作者が天井と確率上昇を短時間で調整できる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "001-focus-familiar",
     "title": "Focus Familiar",
     "path": "/services/focus-familiar/",
