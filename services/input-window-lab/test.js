@@ -1,0 +1,12 @@
+const assert=require('assert'),L=require('./logic');
+assert.deepStrictEqual(L.normalize({coyoteMs:-4,bufferMs:999}),{coyoteMs:0,bufferMs:250});
+assert.deepStrictEqual(L.normalize({coyoteMs:126,bufferMs:144}),{coyoteMs:130,bufferMs:140});
+assert.strictEqual(L.classifyPress(1000,{coyoteMs:0,bufferMs:0}),'normal');
+assert.strictEqual(L.classifyPress(1210,{coyoteMs:120,bufferMs:100}),'coyote');
+assert.strictEqual(L.classifyPress(1230,{coyoteMs:120,bufferMs:100}),'miss');
+assert.strictEqual(L.classifyPress(1710,{coyoteMs:120,bufferMs:100}),'buffer');
+assert.strictEqual(L.classifyPress(1650,{coyoteMs:120,bufferMs:100}),'miss');
+assert.strictEqual(L.classifyPress(1900,{coyoteMs:120,bufferMs:100}),'normal');
+assert.deepStrictEqual(L.makePreset({coyoteMs:120,bufferMs:140}),{coyoteTimeMs:120,jumpBufferMs:140,consumeOnJump:true,resetCoyoteOnWallContact:false});
+assert.ok(L.presetText({coyoteMs:120,bufferMs:140}).includes('"jumpBufferMs": 140'));
+console.log('Input Window Lab logic: 10 assertions passed');

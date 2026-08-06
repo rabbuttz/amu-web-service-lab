@@ -46,7 +46,7 @@ out = {
 for slug, kind, value, note in rows:
     previous = old.get('services', {}).get(slug, {}).get(kind, {}).get('value', 0)
     out['services'].setdefault(slug, {})[kind] = {'value': value, 'previous': previous, 'delta': value - previous, 'note': note}
-    if slug in ('save-schema-lens', 'pity-curve', 'key-art-cropper', 'ui-copy-stress', 'hit-feel-lab', 'nine-slice-lab'):
+    if slug in ('save-schema-lens', 'pity-curve', 'key-art-cropper', 'ui-copy-stress', 'hit-feel-lab', 'nine-slice-lab', 'input-window-lab'):
         out['services'][slug]['traffic_label'] = 'verification traffic may be included; exclude from traction judgement'
 METRICS.write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(now)

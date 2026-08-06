@@ -1,5 +1,16 @@
 [
   {
+    "id": "012-input-window-lab",
+    "title": "Input Window Lab",
+    "path": "/services/input-window-lab/",
+    "published_at": "2026-08-06T17:54:48Z",
+    "created_at": "2026-08-06T17:54:48Z",
+    "status": "active",
+    "hypothesis": "コヨーテタイムと先行入力を同じループコースで実際に試してJSONに残せれば、ゲーム制作者がプラットフォーマーの入力猶予を感覚と数値の両方で短時間に決められる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "011-nine-slice-lab",
     "title": "9-Slice Lab",
     "path": "/services/nine-slice-lab/",
