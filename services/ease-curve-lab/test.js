@@ -1,0 +1,18 @@
+const assert=require('assert'),L=require('./logic');
+assert.deepStrictEqual(L.normalize([-2,3,4,-2]),[0,2,1,-1]);
+assert.deepStrictEqual(L.normalize(),[.25,.1,.25,1]);
+assert.strictEqual(L.axis(0,.2,.8),0);
+assert.strictEqual(L.axis(1,.2,.8),1);
+assert.strictEqual(L.solve([0,0,1,1],.5),.5);
+assert.strictEqual(L.solve([.42,0,.58,1],0),0);
+assert.strictEqual(L.solve([.42,0,.58,1],1),1);
+const rows=L.samples([0,0,1,1],9);
+assert.strictEqual(rows.length,9);
+assert.deepStrictEqual(rows[4],{time:.5,value:.5});
+const smooth=L.analyze([0,0,1,1]);
+assert.strictEqual(smooth.character,'なめらか');
+assert.strictEqual(L.analyze([.18,1.35,.32,1.1]).overshoots,true);
+const text=L.exportText([.25,.1,.25,1],800);
+assert.ok(text.includes('cubic-bezier(0.25, 0.1, 0.25, 1)'));
+assert.ok(text.includes('Unity AnimationCurve samples'));
+console.log('Ease Curve Lab logic: 13 assertions passed');

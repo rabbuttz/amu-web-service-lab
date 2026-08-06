@@ -1,5 +1,16 @@
 [
   {
+    "id": "016-ease-curve-lab",
+    "title": "Ease Curve Lab",
+    "path": "/services/ease-curve-lab/",
+    "published_at": "2026-08-06T23:08:11Z",
+    "created_at": "2026-08-06T23:08:11Z",
+    "status": "active",
+    "hypothesis": "イージング曲線を等速移動と見比べながら調整しCSSとUnity向けサンプルに変換できれば、ゲーム制作者がUIや演出の緩急を実装前に短時間で決められる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "015-cooldown-weave",
     "title": "Cooldown Weave",
     "path": "/services/cooldown-weave/",
