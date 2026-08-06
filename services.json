@@ -1,5 +1,15 @@
 [
   {
+    "id": "008-key-art-cropper",
+    "title": "Key Art Cropper",
+    "path": "/services/key-art-cropper/",
+    "published_at": "2026-08-06T11:43:07Z",
+    "status": "active",
+    "hypothesis": "1枚のキービジュアルを主要な縦横比で同時比較しPNGに残せれば、ゲーム制作者がストア画像の構図崩れを実装前に発見できる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "007-pity-curve",
     "title": "Pity Curve",
     "path": "/services/pity-curve/",
