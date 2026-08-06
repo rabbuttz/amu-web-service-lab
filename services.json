@@ -1,0 +1,11 @@
+[
+  {
+    "id": "001-focus-familiar",
+    "title": "Focus Familiar",
+    "path": "/services/focus-familiar/",
+    "published_at": "2026-08-06",
+    "status": "active",
+    "hypothesis": "短い集中タイマーに収集ループを加えると再訪が増える",
+    "metrics": ["unique_visitors", "pageviews", "returning_visitors", "start_clicks", "completed_expeditions"]
+  }
+]
