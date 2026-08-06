@@ -1,0 +1,17 @@
+const assert=require('assert'),L=require('./logic');
+assert.strictEqual(L.round(1000/60),16.67);
+assert.deepStrictEqual(L.normalize({fps:55,gameplay:-2,gpu:99}),{fps:60,gameplay:0,physics:0,animation:0,renderCpu:0,otherCpu:0,gpu:40});
+let a=L.analyze({fps:60,gameplay:2,physics:1,animation:1,renderCpu:3,otherCpu:2,gpu:12});
+assert.strictEqual(a.budget,16.67);
+assert.strictEqual(a.cpu,9);
+assert.strictEqual(a.frame,12);
+assert.strictEqual(a.headroom,4.67);
+assert.strictEqual(a.bottleneck,'gpu');
+assert.strictEqual(a.status,'safe');
+a=L.analyze({fps:120,gameplay:3,physics:2,animation:1,renderCpu:3,otherCpu:1,gpu:7});
+assert.strictEqual(a.bottleneck,'cpu');
+assert.strictEqual(a.status,'over');
+const data=L.exportData({fps:30,gameplay:4,physics:2,animation:2,renderCpu:4,otherCpu:2,gpu:20});
+assert.strictEqual(data.estimatedFrameMs,20);
+assert.ok(L.exportText({fps:60}).includes('"targetFps": 60'));
+console.log('Frame Budget Lab logic: 12 assertions passed');
