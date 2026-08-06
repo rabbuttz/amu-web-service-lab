@@ -7,8 +7,8 @@ if((new URLSearchParams(location.search).get('demo')||'').startsWith('after')){
   d=G.complete(G.begin(d,30000,20),50000);state=d;
 }
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-const METRIC_NS='amu-web-service-lab',METRIC_SERVICE='focus-familiar';
-function metric(name){fetch(`https://api.counterapi.dev/v1/${METRIC_NS}/${METRIC_SERVICE}-${name}/up`,{mode:'no-cors',keepalive:true}).catch(()=>{})}
+const METRIC_NS='amu-web-service-lab',METRIC_SERVICE='focus-familiar',METRIC_PINGS=[];
+function metric(name){const ping=new Image();METRIC_PINGS.push(ping);ping.onload=ping.onerror=()=>METRIC_PINGS.splice(METRIC_PINGS.indexOf(ping),1);ping.src=`https://api.counterapi.dev/v1/${METRIC_NS}/${METRIC_SERVICE}-${name}/up?t=${Date.now()}`}
 metric('pageview');
 if(!localStorage.getItem(`${METRIC_SERVICE}-counted`)){localStorage.setItem(`${METRIC_SERVICE}-counted`,'1');metric('visitor')}
 function save(){state.lastSeen=Date.now();localStorage.setItem(KEY,JSON.stringify(state))}
