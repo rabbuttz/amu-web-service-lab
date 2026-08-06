@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-08-06T09:11:56Z",
+  "observed_at": "2026-08-06T09:21:42Z",
   "previous_observed_at": "2026-08-06T07:53:37Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; transport timeouts retain the previous value",
-  "caveat": "認証なしカウンターのため数値は方向性の参考値。CounterAPIの接続上限エラー(400)は指定どおり0、通信タイムアウトは直前値を維持したため、負の増分は実利用の減少を意味しない。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と既存サービス改善は保留。Save Schema Lensは公開前で0。",
+  "caveat": "認証なしカウンターのため数値は方向性の参考値。CounterAPIの接続上限エラー(400)は指定どおり0、通信タイムアウトは直前値を維持したため、負の増分は実利用の減少を意味しない。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と既存サービス改善は保留。Save Schema Lensの値はローカル・公開画面の検証アクセスを含み、外部利用シグナルではない。",
   "services": {
     "focus-familiar": {
       "visitor": {"value": 4, "previous": 4, "delta": 0},
@@ -35,11 +35,11 @@
       "complete": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 400 treated as 0"}
     },
     "save-schema-lens": {
-      "visitor": {"value": 0, "previous": 0, "delta": 0},
-      "view": {"value": 0, "previous": 0, "delta": 0},
-      "start": {"value": 0, "previous": 0, "delta": 0},
-      "complete": {"value": 0, "previous": 0, "delta": 0},
-      "traffic_label": "not yet published"
+      "visitor": {"value": 2, "previous": 0, "delta": 2},
+      "view": {"value": 4, "previous": 0, "delta": 4},
+      "start": {"value": 3, "previous": 0, "delta": 3},
+      "complete": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 400 record not found treated as 0"},
+      "traffic_label": "verification traffic included; exclude from traction judgement"
     }
   }
 }
