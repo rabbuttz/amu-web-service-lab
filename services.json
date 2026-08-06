@@ -3,9 +3,9 @@
     "id": "011-nine-slice-lab",
     "title": "9-Slice Lab",
     "path": "/services/nine-slice-lab/",
-    "published_at": "2026-08-06T15:51:36Z",
+    "published_at": null,
     "created_at": "2026-08-06T15:51:36Z",
-    "status": "active",
+    "status": "deployment_pending",
     "hypothesis": "UIパネル画像の9スライス境界と複数サイズの伸縮結果を同時確認してUnity向け設定を持ち帰れれば、ゲーム制作者がUI素材の崩れを実装前に発見できる",
     "primary_metric": "complete/start",
     "metrics": ["visitor", "view", "start", "complete"]
