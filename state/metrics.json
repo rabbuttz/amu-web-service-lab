@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-08-06T10:23:55Z",
-  "previous_observed_at": "2026-08-06T09:21:42Z",
+  "observed_at": "2026-08-06T10:39:08Z",
+  "previous_observed_at": "2026-08-06T10:23:55Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; HTTP 403 and transport failures retain the previous value",
-  "caveat": "認証なしカウンターのため数値は方向性の参考値。今回は全24キーがHTTP 403となり、障害時に偽の減少を記録しないため直前値を維持した。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と既存サービス改善は保留。新サービスの値は公開前なので0。",
+  "caveat": "認証なしカウンターのため数値は方向性の参考値。既存6サービスは全24キーがHTTP 403となり、障害時に偽の減少を記録しないため直前値を維持した。Pity CurveのviewはHTTP 400のため0として扱った。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と既存サービス改善は保留。Pity Curveの値はローカル・公開画面の検証アクセスを含み、外部利用シグナルではない。",
   "services": {
     "focus-familiar": {
       "visitor": {"value": 4, "previous": 4, "delta": 0, "note": "HTTP 403; previous retained"},
@@ -42,11 +42,11 @@
       "traffic_label": "verification traffic included; exclude from traction judgement"
     },
     "pity-curve": {
-      "visitor": {"value": 0, "previous": 0, "delta": 0},
-      "view": {"value": 0, "previous": 0, "delta": 0},
-      "start": {"value": 0, "previous": 0, "delta": 0},
-      "complete": {"value": 0, "previous": 0, "delta": 0},
-      "traffic_label": "not yet published"
+      "visitor": {"value": 2, "previous": 0, "delta": 2},
+      "view": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 400 treated as 0"},
+      "start": {"value": 1, "previous": 0, "delta": 1},
+      "complete": {"value": 2, "previous": 0, "delta": 2},
+      "traffic_label": "verification traffic included; exclude from traction judgement"
     }
   }
 }
