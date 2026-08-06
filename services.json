@@ -1,5 +1,15 @@
 [
   {
+    "id": "009-ui-copy-stress",
+    "title": "UI Copy Stress",
+    "path": "/services/ui-copy-stress/",
+    "published_at": "2026-08-06T12:55:41Z",
+    "status": "active",
+    "hypothesis": "UI文言を擬似ローカライズして表示幅ごとに判定できれば、ゲームやWebサービスの翻訳前に文字あふれリスクを低コストで発見できる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "008-key-art-cropper",
     "title": "Key Art Cropper",
     "path": "/services/key-art-cropper/",

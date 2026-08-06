@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-08-06T11:43:07Z",
-  "previous_observed_at": "2026-08-06T10:39:08Z",
+  "observed_at": "2026-08-06T12:55:41Z",
+  "previous_observed_at": "2026-08-06T11:43:07Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; HTTP 403 and transport failures retain the previous value",
-  "caveat": "認証なしカウンターのため数値は方向性の参考値。既存7サービスの全28キーがHTTP 403となり、障害時に偽の減少を記録しないため直前値を維持した。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と既存サービス改善は保留。検証アクセスを含む値は外部利用シグナルとして扱わない。",
+  "caveat": "認証なしカウンターのため数値は方向性の参考値。既存8サービスの全32キーがHTTP 403となり、障害時に偽の減少を記録しないため直前値を維持した。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と既存サービス改善は保留。検証アクセスを含む値は外部利用シグナルとして扱わない。",
   "services": {
     "focus-familiar": {
       "visitor": {"value": 4, "previous": 4, "delta": 0, "note": "HTTP 403; previous retained"},
@@ -49,6 +49,13 @@
       "traffic_label": "verification traffic included; exclude from traction judgement"
     },
     "key-art-cropper": {
+      "visitor": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 403; previous retained"},
+      "view": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 403; previous retained"},
+      "start": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 403; previous retained"},
+      "complete": {"value": 0, "previous": 0, "delta": 0, "note": "HTTP 403; previous retained"},
+      "traffic_label": "verification traffic included; exclude from traction judgement"
+    },
+    "ui-copy-stress": {
       "visitor": {"value": 0, "previous": 0, "delta": 0, "note": "not yet published"},
       "view": {"value": 0, "previous": 0, "delta": 0, "note": "not yet published"},
       "start": {"value": 0, "previous": 0, "delta": 0, "note": "not yet published"},

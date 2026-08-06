@@ -1,0 +1,11 @@
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.UICopyStress=api})(this,function(){
+  const accent={a:'à',b:'ƀ',c:'ç',d:'ď',e:'ë',f:'ƒ',g:'ğ',h:'ħ',i:'ï',j:'ĵ',k:'ķ',l:'ľ',m:'ɱ',n:'ñ',o:'ö',p:'þ',q:'ʠ',r:'ř',s:'š',t:'ţ',u:'ü',v:'ṽ',w:'ŵ',x:'ẋ',y:'ÿ',z:'ž'};
+  function clamp(n,min,max){return Math.min(max,Math.max(min,Number(n)||0))}
+  function pseudo(text,growth=.35){const source=String(text||''),converted=source.replace(/[a-z]/gi,c=>{const out=accent[c.toLowerCase()]||c;return c===c.toUpperCase()?out.toUpperCase():out});const target=Math.ceil(source.length*(1+clamp(growth,0,2)));if(converted.length>=target)return`［${converted}］`;const words=converted.split(/(\s+)/),letters=converted.replace(/\s/g,'')||'~';let out=converted,i=0;while(out.length<target){out+=(out.endsWith(' ')?'':' ')+letters[i++%letters.length]}return`［${out.slice(0,target)}］`}
+  function parseLine(line,index){const parts=String(line).split('|').map(x=>x.trim());if(parts.length<4)return{error:`${index+1}行目: 項目が4つ必要`};const font=Number(parts.pop()),width=Number(parts.pop()),text=parts.slice(1).join(' | '),key=parts[0];if(!key||!text||!Number.isFinite(width)||width<40||!Number.isFinite(font)||font<8)return{error:`${index+1}行目: キー・文言・幅40px以上・文字8px以上を確認`};return{key,text,width,font}}
+  function parseInput(input){const rows=[],errors=[];String(input).split(/\r?\n/).forEach((line,i)=>{if(!line.trim())return;const row=parseLine(line,i);row.error?errors.push(row.error):rows.push(row)});return{rows,errors}}
+  function classify(measured,width,lines=2){const ratio=measured/width,max=Math.max(1,Number(lines)||1);if(ratio<=1)return{status:'fit',label:'収まる',neededLines:1};if(ratio<=max)return{status:'wrap',label:'折返し',neededLines:Math.ceil(ratio)};return{status:'danger',label:'要修正',neededLines:Math.ceil(ratio)}}
+  function csvCell(v){return`"${String(v).replace(/"/g,'""')}"`}
+  function toCSV(results){const head=['key','source','pseudo','width_px','font_px','measured_px','status','needed_lines'];return'\ufeff'+[head,...results.map(r=>[r.key,r.text,r.pseudo,r.width,r.font,Math.round(r.measured),r.label,r.neededLines])].map(row=>row.map(csvCell).join(',')).join('\r\n')}
+  return{clamp,pseudo,parseLine,parseInput,classify,toCSV};
+});
