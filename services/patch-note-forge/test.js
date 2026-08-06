@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict');const P=require('./logic.js');
+assert.deepEqual(P.classify('feat(ui): add quick slot (#42)'),{text:'Quick slot',category:'added',source:'feat(ui): add quick slot (#42)'});
+assert.equal(P.classify('fix: resolve save crash #18').category,'fixed');
+assert.equal(P.classify('chore: bump tooling').category,'internal');
+const parsed=P.parse('feat: add map\nfix: save crash\nchore: deps\nfeat: add map');
+assert.equal(parsed.total,2);assert.equal(parsed.ignored,1);assert.equal(parsed.duplicates,1);assert.deepEqual(parsed.groups.added,['Map']);
+const out=P.render('feat: photo mode\nfix(audio): mute bug',{title:'夏アップデート',version:'v1.2',date:'2026-08-06'});
+assert.match(out.markdown,/# 夏アップデート v1\.2 — 2026-08-06/);assert.match(out.markdown,/## 追加\n- Photo mode/);assert.match(out.markdown,/## 修正\n- Mute bug/);
+assert.equal(P.parse('build: release',true).groups.internal[0],'Release');
+console.log('PASS: commit cleanup, categorization, internal filtering, deduplication, Markdown rendering');

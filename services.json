@@ -37,5 +37,15 @@
     "hypothesis": "スプライトアニメの速度を同じ画面で比較できれば、ゲーム制作者が感覚的なFPS調整を短時間で確定できる",
     "primary_metric": "complete/start",
     "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
+    "id": "005-patch-note-forge",
+    "title": "Patch Note Forge",
+    "path": "/services/patch-note-forge/",
+    "published_at": "2026-08-06T07:53:37Z",
+    "status": "active",
+    "hypothesis": "生のコミットログを公開向けの分類済みMarkdownへ端末内で変換できれば、ゲームやWebサービスの更新告知作成を短縮できる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
   }
 ]

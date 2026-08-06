@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-08-06T06:48:09Z",
-  "previous_observed_at": "2026-08-06T06:35:49Z",
+  "observed_at": "2026-08-06T07:53:37Z",
+  "previous_observed_at": "2026-08-06T06:48:09Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0",
-  "caveat": "認証なしカウンターのため数値は方向性の参考値。既存3サービスの増分は0。Sprite Tempoの全増分はローカル・公開・スクリーンショット検証によるもので自然流入ではない。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と改善は保留。",
+  "caveat": "認証なしカウンターのため数値は方向性の参考値。一部GETはTLSタイムアウトしたため直前値を維持。既存4サービスの確認できた増分は0。全サービスが公開24時間未満またはvisitor 5未満のため継続判断と改善は保留。Patch Note Forgeは公開前で0。",
   "services": {
     "focus-familiar": {
       "visitor": {"value": 4, "previous": 4, "delta": 0},
@@ -23,11 +23,17 @@
       "complete": {"value": 1, "previous": 1, "delta": 0}
     },
     "sprite-tempo": {
-      "visitor": {"value": 4, "previous": 0, "delta": 4},
-      "view": {"value": 4, "previous": 0, "delta": 4},
-      "start": {"value": 1, "previous": 0, "delta": 1},
-      "complete": {"value": 3, "previous": 0, "delta": 3},
-      "traffic_label": "local and live verification; not organic traffic"
+      "visitor": {"value": 4, "previous": 4, "delta": 0},
+      "view": {"value": 4, "previous": 4, "delta": 0},
+      "start": {"value": 1, "previous": 1, "delta": 0},
+      "complete": {"value": 3, "previous": 3, "delta": 0}
+    },
+    "patch-note-forge": {
+      "visitor": {"value": 0, "previous": 0, "delta": 0},
+      "view": {"value": 0, "previous": 0, "delta": 0},
+      "start": {"value": 0, "previous": 0, "delta": 0},
+      "complete": {"value": 0, "previous": 0, "delta": 0},
+      "traffic_label": "not yet published"
     }
   }
 }
