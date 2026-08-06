@@ -27,5 +27,15 @@
     "hypothesis": "イベント出店の損益分岐と需要感度を同時に見せれば、クリエイターが持込数と予算を短時間で判断できる",
     "primary_metric": "complete/start",
     "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
+    "id": "004-sprite-tempo",
+    "title": "Sprite Tempo",
+    "path": "/services/sprite-tempo/",
+    "published_at": "2026-08-06T06:35:49Z",
+    "status": "active",
+    "hypothesis": "スプライトアニメの速度を同じ画面で比較できれば、ゲーム制作者が感覚的なFPS調整を短時間で確定できる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
   }
 ]

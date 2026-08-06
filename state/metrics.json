@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-08-06T05:29:51Z",
-  "previous_observed_at": "2026-08-06T04:19:04Z",
+  "observed_at": "2026-08-06T06:35:49Z",
+  "previous_observed_at": "2026-08-06T05:29:51Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0",
-  "caveat": "認証なしカウンターのため数値は方向性の参考値。Scope Canvasの増分は前回公開検証の遅延分、Booth Balanceの全増分は今回のローカル・公開検証であり、自然流入とは判定していない。全サービスが公開24時間未満またはvisitor 5未満のため継続判断は保留。",
+  "caveat": "認証なしカウンターのため数値は方向性の参考値。取得APIに一時的な400とタイムアウトがあったため再取得して確定した。全サービスが公開24時間未満またはvisitor 5未満で、今回の増分は0のため継続判断と改善は保留。",
   "services": {
     "focus-familiar": {
       "visitor": {"value": 4, "previous": 4, "delta": 0},
@@ -11,18 +11,23 @@
       "complete": {"value": 0, "previous": 0, "delta": 0}
     },
     "scope-canvas": {
-      "visitor": {"value": 4, "previous": 3, "delta": 1},
-      "view": {"value": 4, "previous": 3, "delta": 1},
-      "start": {"value": 3, "previous": 2, "delta": 1},
-      "complete": {"value": 3, "previous": 2, "delta": 1},
-      "traffic_label": "prior verification"
+      "visitor": {"value": 4, "previous": 4, "delta": 0},
+      "view": {"value": 4, "previous": 4, "delta": 0},
+      "start": {"value": 3, "previous": 3, "delta": 0},
+      "complete": {"value": 3, "previous": 3, "delta": 0}
     },
     "booth-balance": {
-      "visitor": {"value": 2, "previous": 0, "delta": 2},
-      "view": {"value": 2, "previous": 0, "delta": 2},
-      "start": {"value": 1, "previous": 0, "delta": 1},
-      "complete": {"value": 1, "previous": 0, "delta": 1},
-      "traffic_label": "current verification"
+      "visitor": {"value": 2, "previous": 2, "delta": 0},
+      "view": {"value": 2, "previous": 2, "delta": 0},
+      "start": {"value": 1, "previous": 1, "delta": 0},
+      "complete": {"value": 1, "previous": 1, "delta": 0}
+    },
+    "sprite-tempo": {
+      "visitor": {"value": 0, "previous": 0, "delta": 0},
+      "view": {"value": 0,"previous": 0, "delta": 0},
+      "start": {"value": 0, "previous": 0, "delta": 0},
+      "complete": {"value": 0, "previous": 0, "delta": 0},
+      "traffic_label": "not yet published"
     }
   }
 }
