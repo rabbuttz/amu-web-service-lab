@@ -7,7 +7,10 @@ if((new URLSearchParams(location.search).get('demo')||'').startsWith('after')){
   d=G.complete(G.begin(d,30000,20),50000);state=d;
 }
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-function metric(name,props={}){try{window.va&&window.va('event',{name,...props})}catch(e){}}
+const METRIC_NS='amu-web-service-lab',METRIC_SERVICE='focus-familiar';
+function metric(name){fetch(`https://api.counterapi.dev/v1/${METRIC_NS}/${METRIC_SERVICE}-${name}/up`,{mode:'no-cors',keepalive:true}).catch(()=>{})}
+metric('pageview');
+if(!localStorage.getItem(`${METRIC_SERVICE}-counted`)){localStorage.setItem(`${METRIC_SERVICE}-counted`,'1');metric('visitor')}
 function save(){state.lastSeen=Date.now();localStorage.setItem(KEY,JSON.stringify(state))}
 function select(group,value,key){state[key]=value;save();render()}
 $('#moodBtns').onclick=e=>e.target.dataset.value&&select('#moodBtns',e.target.dataset.value,'mood');
