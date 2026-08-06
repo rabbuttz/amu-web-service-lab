@@ -1,5 +1,16 @@
 [
   {
+    "id": "015-cooldown-weave",
+    "title": "Cooldown Weave",
+    "path": "/services/cooldown-weave/",
+    "published_at": "2026-08-06T21:52:37Z",
+    "created_at": "2026-08-06T21:52:37Z",
+    "status": "active",
+    "hypothesis": "複数アクションの再使用時間・効果時間・初回発動を同じ時間軸で可視化して設計JSONに残せれば、ゲーム制作者がローテーションの空白を短時間で発見できる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "014-frame-budget-lab",
     "title": "Frame Budget Lab",
     "path": "/services/frame-budget-lab/",
