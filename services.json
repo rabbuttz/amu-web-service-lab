@@ -1,10 +1,22 @@
 [
   {
+    "id": "010-hit-feel-lab",
+    "title": "Hit Feel Lab",
+    "path": "/services/hit-feel-lab/",
+    "published_at": null,
+    "created_at": "2026-08-06T14:26:47Z",
+    "status": "deployment-pending",
+    "hypothesis": "同じ標的を叩きながらヒットストップ・揺れ・フラッシュ・拡縮を比較してJSONに残せれば、ゲーム制作者が打撃フィードバックの初期値を短時間で決められる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "009-ui-copy-stress",
     "title": "UI Copy Stress",
     "path": "/services/ui-copy-stress/",
-    "published_at": "2026-08-06T12:55:41Z",
-    "status": "active",
+    "published_at": null,
+    "created_at": "2026-08-06T12:55:41Z",
+    "status": "deployment-blocked",
     "hypothesis": "UI文言を擬似ローカライズして表示幅ごとに判定できれば、ゲームやWebサービスの翻訳前に文字あふれリスクを低コストで発見できる",
     "primary_metric": "complete/start",
     "metrics": ["visitor", "view", "start", "complete"]
