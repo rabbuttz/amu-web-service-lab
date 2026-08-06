@@ -1,0 +1,8 @@
+const B=window.BoothBalance,$=s=>document.querySelector(s),PINGS=[];const NS='amu-web-service-lab',SLUG='booth-balance';let started=false;
+function metric(name){const img=new Image();PINGS.push(img);img.onload=img.onerror=()=>PINGS.splice(PINGS.indexOf(img),1);img.src=`https://api.counterapi.dev/v1/${NS}/${SLUG}-${name}/up?t=${Date.now()}`}
+metric('view');try{if(!localStorage.getItem(`${SLUG}-counted`)){setTimeout(()=>{metric('visitor');localStorage.setItem(`${SLUG}-counted`,'1')},1200)}}catch(e){}
+const form=$('#calculator');function values(){return Object.fromEntries([...new FormData(form)].map(([k,v])=>[k,Number(v)]))}
+function draw(track=false){const r=B.calculate(values());$('#margin').textContent=B.yen(r.margin);$('#upfront').textContent=B.yen(r.upfront);$('#breakEven').textContent=r.breakEven===null?'設定不可':`${r.breakEven} 個`;$('#feasibility').textContent=r.breakEven===null?'販売価格が原価以下だよ':r.feasible?`在庫内で到達可能（残り ${Math.max(0,r.stock-r.breakEven)} 個）`:`在庫より ${r.breakEven-r.stock} 個多く必要`;
+  const cards=[['低調',r.low],['想定',r.base],['好調',r.high]];$('#scenarios').innerHTML=cards.map(([name,s])=>`<article><span>${name}</span><strong>${s.units} 個</strong><small>売上 ${B.yen(s.revenue)}</small><b class="${s.profit>=0?'plus':'minus'}">収支 ${s.profit>=0?'+':''}${B.yen(s.profit)}</b></article>`).join('');
+  $('#note').textContent=`想定客数 ${r.visitors}人 × 購入率 ${(r.conversion*100).toFixed(1)}% を基準に、低調60%・好調140%で比較。在庫 ${r.stock}個を上限にしているよ。`;if(track)metric('complete')}
+form.addEventListener('input',()=>{if(!started){started=true;metric('start')}});form.addEventListener('submit',e=>{e.preventDefault();if(!started){started=true;metric('start')}draw(true)});draw();

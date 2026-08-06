@@ -17,5 +17,15 @@
     "hypothesis": "制作依頼前に納品物・修正・利用範囲を可視化できれば、クリエイターと依頼者の認識合わせの手間を減らせる",
     "primary_metric": "complete/start",
     "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
+    "id": "003-booth-balance",
+    "title": "Booth Balance",
+    "path": "/services/booth-balance/",
+    "published_at": "2026-08-06T05:21:31Z",
+    "status": "active",
+    "hypothesis": "イベント出店の損益分岐と需要感度を同時に見せれば、クリエイターが持込数と予算を短時間で判断できる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
   }
 ]
