@@ -1,5 +1,16 @@
 [
   {
+    "id": "013-sfx-seed-lab",
+    "title": "SFX Seed Lab",
+    "path": "/services/sfx-seed-lab/",
+    "published_at": null,
+    "created_at": "2026-08-06T19:10:43Z",
+    "status": "deployment_pending",
+    "hypothesis": "短いゲーム効果音をプリセットからブラウザ内で合成してWAVに持ち帰れれば、ゲーム制作者が仮音素材の探索と加工にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "012-input-window-lab",
     "title": "Input Window Lab",
     "path": "/services/input-window-lab/",

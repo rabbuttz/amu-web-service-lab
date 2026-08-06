@@ -1,9 +1,36 @@
 {
-  "observed_at": "2026-08-06T17:57:24Z",
-  "previous_observed_at": "2026-08-06T17:52:57Z",
+  "observed_at": "2026-08-06T19:15:10Z",
+  "previous_observed_at": "2026-08-06T19:10:43Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
+    "sfx-seed-lab": {
+      "visitor": {
+        "value": 1,
+        "previous": 0,
+        "delta": 1,
+        "note": "HTTP 200"
+      },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+      "view": {
+        "value": 1,
+        "previous": 0,
+        "delta": 1,
+        "note": "HTTP 200"
+      },
+      "start": {
+        "value": 1,
+        "previous": 0,
+        "delta": 1,
+        "note": "HTTP 200"
+      },
+      "complete": {
+        "value": 1,
+        "previous": 0,
+        "delta": 1,
+        "note": "HTTP 200"
+      }
+    },
     "input-window-lab": {
       "visitor": {
         "value": 2,
@@ -14,8 +41,8 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 2,
-        "previous": 0,
-        "delta": 2,
+        "previous": 2,
+        "delta": 0,
         "note": "HTTP 200"
       },
       "start": {
@@ -41,14 +68,14 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 2,
-        "previous": 2,
-        "delta": 0,
+        "previous": 0,
+        "delta": 2,
         "note": "HTTP 200"
       },
       "start": {
         "value": 1,
-        "previous": 1,
-        "delta": 0,
+        "previous": 0,
+        "delta": 1,
         "note": "HTTP 200"
       },
       "complete": {
@@ -61,8 +88,8 @@
     "hit-feel-lab": {
       "visitor": {
         "value": 2,
-        "previous": 2,
-        "delta": 0,
+        "previous": 0,
+        "delta": 2,
         "note": "HTTP 200"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
@@ -82,7 +109,7 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 400; treated as 0"
+        "note": "TimeoutError: The read operation timed out; previous retained"
       }
     },
     "ui-copy-stress": {
@@ -95,14 +122,14 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 1,
-        "previous": 1,
-        "delta": 0,
+        "previous": 0,
+        "delta": 1,
         "note": "HTTP 200"
       },
       "start": {
         "value": 1,
-        "previous": 1,
-        "delta": 0,
+        "previous": 0,
+        "delta": 1,
         "note": "HTTP 200"
       },
       "complete": {
@@ -168,11 +195,12 @@
     },
     "focus-familiar": {
       "visitor": {
-        "value": 4,
+        "value": 0,
         "previous": 4,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -4,
+        "note": "HTTP 400; treated as 0"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 3,
         "previous": 3,
@@ -199,6 +227,7 @@
         "delta": 0,
         "note": "HTTP 200"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 4,
         "previous": 4,
@@ -206,16 +235,16 @@
         "note": "HTTP 200"
       },
       "start": {
-        "value": 3,
+        "value": 0,
         "previous": 3,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -3,
+        "note": "HTTP 400; treated as 0"
       },
       "complete": {
-        "value": 3,
+        "value": 0,
         "previous": 3,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -3,
+        "note": "HTTP 400; treated as 0"
       }
     },
     "booth-balance": {
@@ -225,11 +254,12 @@
         "delta": 0,
         "note": "HTTP 200"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
-        "value": 2,
+        "value": 0,
         "previous": 2,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -2,
+        "note": "HTTP 400; treated as 0"
       },
       "start": {
         "value": 1,
@@ -246,16 +276,17 @@
     },
     "sprite-tempo": {
       "visitor": {
-        "value": 4,
+        "value": 0,
         "previous": 4,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -4,
+        "note": "HTTP 400; treated as 0"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
-        "value": 4,
+        "value": 0,
         "previous": 4,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -4,
+        "note": "HTTP 400; treated as 0"
       },
       "start": {
         "value": 1,
@@ -264,10 +295,10 @@
         "note": "HTTP 200"
       },
       "complete": {
-        "value": 3,
+        "value": 0,
         "previous": 3,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -3,
+        "note": "HTTP 400; treated as 0"
       }
     },
     "patch-note-forge": {
@@ -277,17 +308,18 @@
         "delta": 0,
         "note": "HTTP 200"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
-        "value": 4,
+        "value": 0,
         "previous": 4,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -4,
+        "note": "HTTP 400; treated as 0"
       },
       "start": {
-        "value": 2,
+        "value": 0,
         "previous": 2,
-        "delta": 0,
-        "note": "HTTP 200"
+        "delta": -2,
+        "note": "HTTP 400; treated as 0"
       },
       "complete": {
         "value": 0,
