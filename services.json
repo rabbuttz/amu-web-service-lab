@@ -1,5 +1,16 @@
 [
   {
+    "id": "035-camera-envelope",
+    "title": "Camera Envelope",
+    "path": "/services/camera-envelope/",
+    "published_at": "2026-08-07T22:22:25Z",
+    "created_at": "2026-08-07T22:22:25Z",
+    "status": "active",
+    "hypothesis": "2Dゲームの必要ワールド範囲を端末比率ごとに比較し、欠けと必要Orthographic SizeをJSON・Unity C#に残せれば、制作者が画角崩れの実機確認と再計算にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "034-locale-guard",
     "title": "Locale Guard",
     "path": "/services/locale-guard/",

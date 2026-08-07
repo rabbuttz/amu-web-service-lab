@@ -1,0 +1,10 @@
+const assert=require('assert'),G=require('./logic.js');
+assert.equal(G.DEVICES.length,5);
+let r=G.analyze({worldWidth:16,worldHeight:9,orthoSize:4.5,devices:[{id:'hd',name:'HD',width:1920,height:1080}]});
+assert.equal(r.results[0].visibleWidth,16);assert.equal(r.results[0].visibleHeight,9);assert.equal(r.results[0].fits,true);assert.equal(r.results[0].fitSize,4.5);assert.equal(r.results[0].pixelsPerUnit,120);
+r=G.analyze({worldWidth:18,worldHeight:10,orthoSize:5,devices:[{id:'portrait',name:'Portrait',width:1080,height:1920}]});
+assert.equal(r.results[0].visibleWidth,5.63);assert.equal(r.results[0].horizontalCrop,12.38);assert.equal(r.results[0].verticalCrop,0);assert.equal(r.results[0].fits,false);assert.equal(r.results[0].fitSize,16);
+r=G.analyze({worldWidth:18,worldHeight:12,orthoSize:5,devices:[{id:'wide',name:'Wide',width:3440,height:1440}]});assert.equal(r.results[0].horizontalCrop,0);assert.equal(r.results[0].verticalCrop,2);assert.equal(r.results[0].fitSize,6);
+r=G.analyze({worldWidth:10,worldHeight:6,orthoSize:3,devices:[{id:'a',name:'A',width:1600,height:900},{id:'b',name:'B',width:900,height:1600}]});assert.equal(r.summary.devices,2);assert.equal(r.summary.passing,1);assert.equal(r.summary.worstFitSize,8.889);assert.ok(G.unitySnippet(r).includes('Mathf.Max'));assert.ok(G.unitySnippet(r).includes('10f'));assert.ok(G.exportReport(r).generated_at);
+assert.throws(()=>G.analyze({worldWidth:0,worldHeight:5,orthoSize:2}),/0より大きい/);
+console.log('Camera Envelope: 19 assertions passed');
