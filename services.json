@@ -1,5 +1,16 @@
 [
   {
+    "id": "033-layer-sieve",
+    "title": "Layer Sieve",
+    "path": "/services/layer-sieve/",
+    "published_at": "2026-08-07T20:01:18Z",
+    "created_at": "2026-08-07T20:01:18Z",
+    "status": "active",
+    "hypothesis": "物理レイヤーの役割と衝突表を同時監査して孤立・役割矛盾・過密設定をJSONとUnity C#に残せれば、ゲーム制作者が当たり判定の抜けや不要接触を実機デバッグする手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "032-atlas-fit",
     "title": "Atlas Fit",
     "path": "/services/atlas-fit/",

@@ -1,0 +1,12 @@
+const assert=require('assert'),L=require('./logic.js');
+let p=L.parse('Player,actor\nWorld,world\nHUD,ui');assert.equal(p.layers.length,3);assert.equal(p.errors.length,0);
+p=L.parse('A,bogus\nA,actor\na,world');assert.equal(p.layers.length,1);assert.equal(p.errors.length,2);
+assert.equal(L.key(4,1),'1:4');assert.equal(L.normalizePairs([[0,1],[1,0],[0,0],[0,9]],2).size,1);
+let layers=L.parse('Player,actor\nWorld,world\nHUD,ui').layers,r=L.audit(layers,[[0,1]]);assert.equal(r.errors,0);assert.equal(r.warnings,0);assert.equal(r.enabledCount,1);assert.equal(r.possible,3);
+r=L.audit(layers,[[0,2]]);assert.ok(r.issues.some(x=>x.layer==='Player'&&x.level==='error'));assert.ok(r.issues.some(x=>x.layer==='HUD'&&x.level==='warn'));
+layers=L.parse('Shot,projectile\nUI,ui').layers;r=L.audit(layers,[]);assert.ok(r.issues.some(x=>x.message.includes('projectile')));
+layers=L.parse('Sense,sensor\nWall,world').layers;r=L.audit(layers,[[0,1]]);assert.ok(r.issues.some(x=>x.message.includes('actor')));
+layers=L.parse('A,actor\nB,world\nC,other\nD,other\nE,other').layers;r=L.audit(layers,[[0,1],[0,2],[0,3],[0,4]]);assert.ok(r.issues.some(x=>x.message.includes('高密度')));
+const code=L.unityScript(L.parse('Player,actor\nWorld,world\nHUD,ui').layers,[[0,1]]);assert.ok(code.includes('Player'));assert.ok(code.includes('HUD'));assert.ok(!code.includes('"Player"), LayerMask.NameToLayer("World"'));
+const report=L.report(L.parse('Player,actor\nWorld,world').layers,[[0,1]]);assert.equal(report.enabled_pairs[0][0],'Player');assert.equal(report.summary.errors,0);assert.ok(report.generated_at);
+console.log('Layer Sieve: 20 assertions passed');
