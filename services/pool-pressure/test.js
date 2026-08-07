@@ -1,0 +1,11 @@
+const assert=require('assert'),P=require('./logic.js');
+let p=P.parse('開始秒,継続秒,毎秒生成,生存秒,初回バースト,名前\n0,2,2,1,3,test');assert.equal(p.waves.length,1);assert.equal(p.errors.length,0);
+p=P.parse('0,-1,2,1,2,bad\n0,1,1,0,2,bad2\n0,1,1,2,1.5,bad3');assert.equal(p.errors.length,3);
+let e=P.expand([{start:0,duration:2,rate:2,lifetime:1,burst:3,name:'x'}]);assert.equal(e.length,6);assert.deepEqual(e.map(x=>x.time),[0,0,0,.5,1,1.5]);
+let d=P.demandTimeline([{time:0,end:1},{time:1,end:2}]);assert.equal(d.peak,1,'release at same instant happens first');
+let r=P.analyze('0,2,2,1,3,test',{poolSize:2,headroom:20});assert.equal(r.summary.generated,6);assert.equal(r.summary.peak,4);assert.equal(r.summary.overflow,2);assert.equal(r.summary.recommended,5);
+r=P.analyze('0,0,0,3,5,burst',{poolSize:5,headroom:0});assert.equal(r.summary.peak,5);assert.equal(r.summary.overflow,0);
+r=P.analyze('bad',{poolSize:3});assert.equal(r.summary.generated,0);assert.equal(r.errors.length,1);
+r=P.analyze('0,1,0,2,2,a\n0,1,0,2,3,b',{poolSize:4});assert.equal(r.summary.peak,5);assert.equal(r.summary.overflow,1);assert.equal(r.byWave[1].generated,3);
+const out=P.report(r);assert.equal(out.summary.peak,5);assert.equal(out.overflow_samples.length,1);assert.ok(out.generated_at);
+console.log('Pool Pressure: 14 assertions passed');

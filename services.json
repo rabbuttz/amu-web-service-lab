@@ -1,5 +1,16 @@
 [
   {
+    "id": "030-pool-pressure",
+    "title": "Pool Pressure",
+    "path": "/services/pool-pressure/",
+    "published_at": "2026-08-07T16:36:27Z",
+    "created_at": "2026-08-07T16:36:27Z",
+    "status": "active",
+    "hypothesis": "生成頻度・生存時間・初回バーストからオブジェクトの同時使用ピークと容量超過を試算してJSONに残せれば、ゲーム制作者がプール不足による欠落と過剰確保を実装前に減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "029-voice-ceiling",
     "title": "Voice Ceiling",
     "path": "/services/voice-ceiling/",
