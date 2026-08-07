@@ -1,5 +1,16 @@
 [
   {
+    "id": "021-dialogue-tempo",
+    "title": "Dialogue Tempo",
+    "path": "/services/dialogue-tempo/",
+    "published_at": "2026-08-07T05:28:56Z",
+    "created_at": "2026-08-07T05:28:56Z",
+    "status": "active",
+    "hypothesis": "ゲーム会話の台本から発話時間・話者比率・間・選択肢位置を可視化して分析JSONに残せれば、ゲーム制作者が仮収録や実装前のテンポ調整にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "020-control-deck",
     "title": "Control Deck",
     "path": "/services/control-deck/",
