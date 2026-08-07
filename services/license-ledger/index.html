@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ゲームや作品で使う素材のライセンス情報を検査し、Third-Party Noticesの下書きを作る無料ツール"><title>License Ledger｜素材ライセンス台帳</title><link rel="stylesheet" href="style.css"></head>
+<body><main><header><a href="../../">← 実験室</a><span>NO LOGIN / LOCAL ONLY</span></header>
+<section class="hero"><p class="eyebrow">ASSET ATTRIBUTION CHECKER</p><h1>素材の出典を、<br>公開直前に探さない。</h1><p>ゲーム・動画・Web制作で使う素材を一覧にして、帰属表示の不足を検査し、Third-Party NoticesのMarkdownを作る。入力内容は端末内だけで処理するよ。</p></section>
+<section class="workspace"><div class="panel editor"><div class="panel-head"><div><p class="eyebrow">ASSET LEDGER</p><h2>素材台帳</h2></div><button id="analyze">不足を検査</button></div><p class="syntax"><code>素材名 | 作者 | ライセンス | 出典URL | 変更内容</code><br>対応名: CC0 / CC BY 4.0 / CC BY-SA 4.0 / MIT / Apache-2.0 / OFL-1.1 / Custom</p><textarea id="ledger" spellcheck="false">Forest Tiles | Aki Studio | CC BY 4.0 | https://example.com/forest | 色調を変更
+Pixel Font | Font Smith | OFL-1.1 | https://example.com/font | なし
+Click Sound |  | CC0 | https://example.com/click | 音量を調整
+Pathfinding Library | Dev Works | MIT | https://example.com/library | なし</textarea></div>
+<div class="panel results"><p class="eyebrow">RELEASE READINESS</p><div class="summary"><div><strong id="total">—</strong><span>素材</span></div><div><strong id="ready">—</strong><span>記録完了</span></div><div><strong id="licenses">—</strong><span>条件種別</span></div><div><strong id="issues">—</strong><span>要確認</span></div></div><div class="result-grid"><section><h3>条件別チェック</h3><div id="groups"></div></section><section><h3>不足・注意</h3><div id="warnings"></div></section></div><div class="actions"><button id="copy" class="secondary">Noticesをコピー</button><span id="status" role="status"></span></div></div></section>
+<section class="privacy"><strong>用途と計測</strong><p>法的助言ではなく、素材情報の整理と確認漏れ防止用だよ。実際の配布条件は各ライセンス原文を確認してね。訪問・表示・検査開始・Markdown出力完了の回数だけを匿名カウンターへ送り、素材名やURLなどの入力内容は送信しない。カウンター障害時も機能は動作する。</p></section></main><script src="logic.js"></script><script src="app.js"></script></body></html>

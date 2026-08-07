@@ -1,0 +1,16 @@
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.LicenseLedger=api})(typeof self!=='undefined'?self:this,function(){
+  const KNOWN={
+    'CC0':{label:'CC0 1.0',needsCreator:false,needsSource:false,note:'帰属表示は必須ではないが、出典記録を残すと管理しやすい。'},
+    'CC BY 4.0':{label:'CC BY 4.0',needsCreator:true,needsSource:true,note:'作者・ライセンス・出典・変更の有無を表示する。'},
+    'CC BY-SA 4.0':{label:'CC BY-SA 4.0',needsCreator:true,needsSource:true,note:'帰属表示に加え、改変物の共有条件を原文で確認する。'},
+    'MIT':{label:'MIT License',needsCreator:true,needsSource:false,note:'配布物に著作権表示とライセンス文を含める。'},
+    'Apache-2.0':{label:'Apache License 2.0',needsCreator:true,needsSource:false,note:'LICENSEと、提供元にNOTICEがある場合はNOTICEも確認する。'},
+    'OFL-1.1':{label:'SIL Open Font License 1.1',needsCreator:true,needsSource:false,note:'ライセンス文を含め、予約フォント名や再配布条件を確認する。'},
+    'Custom':{label:'独自条件',needsCreator:true,needsSource:true,note:'配布・改変・商用利用・クレジット条件を原文で確認する。'}
+  };
+  const clean=s=>String(s||'').trim();
+  function parse(text){const errors=[];const items=[];String(text||'').split(/\r?\n/).forEach((raw,index)=>{const line=raw.trim();if(!line||line.startsWith('#'))return;const p=line.split('|').map(clean);if(p.length<3){errors.push({line:index+1,message:`${index+1}行目: 項目が3つ未満`});return}const item={line:index+1,asset:p[0],creator:p[1],license:p[2],source:p[3]||'',changes:p.slice(4).join(' | ')||''};if(!item.asset||!item.license){errors.push({line:index+1,message:`${index+1}行目: 素材名とライセンスは必須`});return}items.push(item)});return{items,errors}}
+  function analyze(text){const parsed=parse(text),issues=[...parsed.errors],groups={};parsed.items.forEach(item=>{const rule=KNOWN[item.license]||{label:item.license,needsCreator:true,needsSource:true,note:'名称だけでは条件を判定できないため、原文を確認する。'};if(!KNOWN[item.license])issues.push({line:item.line,type:'unknown',message:`「${item.asset}」: 未登録のライセンス名`});if(rule.needsCreator&&!item.creator)issues.push({line:item.line,type:'missing',message:`「${item.asset}」: 作者名が未入力`});if(rule.needsSource&&!item.source)issues.push({line:item.line,type:'missing',message:`「${item.asset}」: 出典URLが未入力`});if(item.source&&!/^https?:\/\//i.test(item.source))issues.push({line:item.line,type:'url',message:`「${item.asset}」: 出典URLの形式を確認`});(groups[item.license]??=[]).push(item)});const completeItems=parsed.items.filter(item=>!issues.some(x=>x.line===item.line)).length;return{items:parsed.items,issues,groups:Object.entries(groups).map(([license,items])=>({license,label:(KNOWN[license]||{label:license}).label,note:(KNOWN[license]||{note:'条件を原文で確認する。'}).note,items})),summary:{total:parsed.items.length,complete:completeItems,licenses:Object.keys(groups).length,issueCount:issues.length}}}
+  function markdown(text){const result=analyze(text),lines=['# Third-Party Notices','','この文書は素材台帳から生成した確認用ドラフトです。各ライセンス原文と配布条件を別途確認してください。',''];result.groups.forEach(group=>{lines.push(`## ${group.label}`,'',group.note,'');group.items.forEach(item=>{lines.push(`### ${item.asset}`,`- 作者: ${item.creator||'要確認'}`,`- 出典: ${item.source||'要確認'}`,`- 変更: ${item.changes||'なし／未記録'}`,'')})});if(!result.items.length)lines.push('素材が登録されていません。','');return lines.join('\n')}
+  return{KNOWN,parse,analyze,markdown};
+});
