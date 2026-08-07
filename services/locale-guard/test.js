@@ -1,0 +1,11 @@
+const assert=require('assert'),G=require('./logic.js');
+let p=G.parseCSV('key,ja,en\na,"x,y",z');assert.equal(p.rows.length,2);assert.equal(p.rows[1][1],'x,y');assert.equal(p.error,'');
+p=G.parseCSV('a,"broken');assert.ok(p.error);
+assert.deepEqual(G.tokens('Hi {name}, %s $(score) {name}'),['$(score)','%s','{name}']);
+let r=G.audit('key,ja,en\nhello,こんにちは,Hello\ncoins,{count}個,{count} coins');assert.equal(r.summary.errors,0);assert.equal(r.summary.rows,2);assert.equal(r.summary.coverage,1);
+r=G.audit('key,ja,en\na,{name},Hello {player}\na,値,\nlong,短文,This translation is deliberately very long');assert.ok(r.issues.some(x=>x.message.includes('プレースホルダー')));assert.ok(r.issues.some(x=>x.message.includes('重複')));assert.ok(r.issues.some(x=>x.message.includes('空欄')));assert.ok(r.issues.some(x=>x.message.includes('UI幅')));assert.equal(r.summary.errors,3);assert.equal(r.summary.warnings,1);
+r=G.audit('id,ja,en\na,A,B');assert.ok(r.issues.some(x=>x.message.includes('先頭列')));
+r=G.audit('key,ja,JA\na,A,B');assert.ok(r.issues.some(x=>x.message.includes('言語名')));
+const csv=G.normalizedCSV(G.audit('key,ja,en\na,"x,y","say ""hi"""'));assert.ok(csv.includes('"x,y"'));assert.ok(csv.includes('"say ""hi"""'));
+const out=G.exportReport(G.audit('key,ja,en\na,A,B'));assert.ok(out.generated_at);assert.equal(out.locales.length,2);
+console.log('Locale Guard: 18 assertions passed');
