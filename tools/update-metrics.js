@@ -27,7 +27,7 @@ async function readCounter(slug, name) {
 
 (async () => {
   const services = {};
-  for (const entry of catalog) {
+  await Promise.all(catalog.map(async entry => {
     const slug = entry.path.split('/').filter(Boolean).pop();
     services[slug] = { traffic_label: 'verification traffic may be included; exclude from traction judgement' };
     const results = await Promise.all(names.map(name => readCounter(slug, name)));
@@ -35,8 +35,7 @@ async function readCounter(slug, name) {
       const old = previous.services?.[slug]?.[name]?.value ?? 0;
       services[slug][name] = { ...results[index], previous: old, delta: results[index].value - old };
     });
-    await sleep(80);
-  }
+  }));
   const state = {
     observed_at: new Date().toISOString(),
     previous_observed_at: previous.observed_at ?? null,

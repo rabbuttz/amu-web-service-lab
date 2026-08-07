@@ -1,5 +1,16 @@
 [
   {
+    "id": "024-palette-signal",
+    "title": "Palette Signal",
+    "path": "/services/palette-signal/",
+    "published_at": "2026-08-07T09:30:23Z",
+    "created_at": "2026-08-07T09:30:23Z",
+    "status": "active",
+    "hypothesis": "ゲームUIの配色を全組み合わせの文字コントラストと3種の色覚変換後の色差で監査しレポートに残せれば、制作者がアクセシビリティ上の見落としと実装後の配色手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "023-license-ledger",
     "title": "License Ledger",
     "path": "/services/license-ledger/",
