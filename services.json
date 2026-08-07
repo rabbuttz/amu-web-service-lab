@@ -1,5 +1,16 @@
 [
   {
+    "id": "025-spawn-fairness",
+    "title": "Spawn Fairness",
+    "path": "/services/spawn-fairness/",
+    "published_at": "2026-08-07T10:42:58Z",
+    "created_at": "2026-08-07T10:42:58Z",
+    "status": "active",
+    "hypothesis": "対戦マップのスポーンと目的地を平面上で動かし、目的地距離・最寄りスポーン間隔・外周余白を同時監査してレポートに残せれば、ゲーム制作者が実装前の初期配置レビューと距離計測にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "024-palette-signal",
     "title": "Palette Signal",
     "path": "/services/palette-signal/",
