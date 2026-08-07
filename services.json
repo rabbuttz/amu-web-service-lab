@@ -1,5 +1,16 @@
 [
   {
+    "id": "018-quest-knot",
+    "title": "Quest Knot",
+    "path": "/services/quest-knot/",
+    "published_at": "2026-08-07T01:41:08Z",
+    "created_at": "2026-08-07T01:41:08Z",
+    "status": "active",
+    "hypothesis": "クエストの前提関係をテキストから可視化し循環参照と未定義参照を実装前に検査できれば、ゲーム制作者が進行不能バグの調査にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "017-wave-loom",
     "title": "Wave Loom",
     "path": "/services/wave-loom/",

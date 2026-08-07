@@ -1,0 +1,12 @@
+const assert=require('assert'),Q=require('./logic');
+let p=Q.parse('start:\nforest:start\nforge:start\nboss: forest, forge');
+assert.strictEqual(p.nodes.length,4);assert.deepStrictEqual(p.nodes[3].deps,['forest','forge']);
+assert.strictEqual(p.errors.length,0);
+p=Q.parse('bad id:\na:\na:');assert.strictEqual(p.errors.length,2);
+let a=Q.analyze('start:\nforest:start\nforge:start\nboss:forest,forge');
+assert.strictEqual(a.status,'ready');assert.strictEqual(a.edges,4);assert.strictEqual(a.maxDepth,2);assert.deepStrictEqual(a.available,['start']);assert.deepStrictEqual(a.critical,['boss']);assert.strictEqual(a.blocked.length,0);
+a=Q.analyze('a:missing');assert.strictEqual(a.status,'issues');assert.deepStrictEqual(a.missing,[{node:'a',dependency:'missing'}]);assert.deepStrictEqual(a.blocked,['a']);
+a=Q.analyze('a:b\nb:c\nc:a');assert.strictEqual(a.cycles.length,1);assert.strictEqual(a.blocked.length,3);
+a=Q.analyze('# comment\nsolo:');assert.strictEqual(a.nodes.length,1);assert.strictEqual(a.maxDepth,0);
+assert.ok(Q.exportText('a:\nb:a').includes('"availableAtStart"'));
+console.log('Quest Knot logic: 18 assertions passed');
