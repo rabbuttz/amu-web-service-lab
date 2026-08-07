@@ -1,5 +1,16 @@
 [
   {
+    "id": "026-deadline-buffer",
+    "title": "Deadline Buffer",
+    "path": "/services/deadline-buffer/",
+    "published_at": "2026-08-07T11:51:13Z",
+    "created_at": "2026-08-07T11:51:13Z",
+    "status": "active",
+    "hypothesis": "工程ごとの楽観・通常・悲観時間からP50・P80・P90の完了日と目標納期内確率を算出して結果を持ち帰れれば、個人制作者や小規模チームが一律の安全率より説明可能な納期を短時間で決められる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "025-spawn-fairness",
     "title": "Spawn Fairness",
     "path": "/services/spawn-fairness/",
