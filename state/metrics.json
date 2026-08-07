@@ -1,10 +1,64 @@
 {
-  "observed_at": "2026-08-07T03:13:02.481Z",
-  "previous_observed_at": "2026-08-07T02:59:42.962Z",
+  "observed_at": "2026-08-07T04:18:22.168Z",
+  "previous_observed_at": "2026-08-07T03:13:02.481Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
     "economy-tide": {
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+      "visitor": {
+        "value": 2,
+        "note": "HTTP 200",
+        "previous": 2,
+        "delta": 0
+      },
+      "view": {
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
+        "previous": 0,
+        "delta": 0
+      },
+      "start": {
+        "value": 0,
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
+      },
+      "complete": {
+        "value": 1,
+        "note": "HTTP 200",
+        "previous": 0,
+        "delta": 1
+      }
+    },
+    "quest-knot": {
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+      "visitor": {
+        "value": 0,
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
+      },
+      "view": {
+        "value": 0,
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
+      },
+      "start": {
+        "value": 3,
+        "note": "HTTP 200",
+        "previous": 0,
+        "delta": 3
+      },
+      "complete": {
+        "value": 2,
+        "note": "HTTP 200",
+        "previous": 0,
+        "delta": 2
+      }
+    },
+    "wave-loom": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 2,
@@ -19,95 +73,41 @@
         "delta": 0
       },
       "start": {
+        "value": 1,
+        "note": "HTTP 200",
+        "previous": 0,
+        "delta": 1
+      },
+      "complete": {
         "value": 0,
         "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
-      },
-      "complete": {
-        "value": 0,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
-        "previous": 0,
-        "delta": 0
-      }
-    },
-    "quest-knot": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
-      "visitor": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 3,
-        "delta": -3
-      },
-      "view": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 5,
-        "delta": -5
-      },
-      "start": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 3,
-        "delta": -3
-      },
-      "complete": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 2,
-        "delta": -2
-      }
-    },
-    "wave-loom": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
-      "visitor": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 2,
-        "delta": -2
-      },
-      "view": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 1,
-        "delta": -1
-      },
-      "start": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 1,
-        "delta": -1
-      },
-      "complete": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 1,
-        "delta": -1
       }
     },
     "ease-curve-lab": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       },
       "view": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "value": 4,
+        "note": "HTTP 200",
         "previous": 0,
-        "delta": 0
+        "delta": 4
       },
       "start": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       },
       "complete": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       }
@@ -123,56 +123,56 @@
       "view": {
         "value": 3,
         "note": "HTTP 200",
-        "previous": 0,
-        "delta": 3
+        "previous": 3,
+        "delta": 0
       },
       "start": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       },
       "complete": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "value": 1,
+        "note": "HTTP 200",
         "previous": 0,
-        "delta": 0
+        "delta": 1
       }
     },
     "frame-budget-lab": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
+        "previous": 2,
+        "delta": -2
+      },
+      "view": {
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
+        "previous": 4,
+        "delta": -4
+      },
+      "start": {
         "value": 2,
         "note": "HTTP 200",
         "previous": 0,
         "delta": 2
       },
-      "view": {
-        "value": 4,
-        "note": "HTTP 200",
-        "previous": 0,
-        "delta": 4
-      },
-      "start": {
-        "value": 0,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
-        "previous": 0,
-        "delta": 0
-      },
       "complete": {
-        "value": 1,
-        "note": "HTTP 200",
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
         "previous": 1,
-        "delta": 0
+        "delta": -1
       }
     },
     "sfx-seed-lab": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
-        "value": 1,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
         "previous": 1,
-        "delta": 0
+        "delta": -1
       },
       "view": {
         "value": 1,
@@ -197,25 +197,25 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 2,
-        "note": "HTTP 200",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 2,
         "delta": 0
       },
       "view": {
         "value": 2,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "note": "HTTP 200",
         "previous": 2,
         "delta": 0
       },
       "start": {
         "value": 1,
-        "note": "HTTP 200",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 1,
         "delta": 0
       },
       "complete": {
         "value": 1,
-        "note": "HTTP 200",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 1,
         "delta": 0
       }
@@ -223,26 +223,26 @@
     "nine-slice-lab": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
-        "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 2,
-        "delta": -2
+        "value": 2,
+        "note": "HTTP 200",
+        "previous": 0,
+        "delta": 2
       },
       "view": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 2,
-        "delta": -2
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
       },
       "start": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 1,
-        "delta": -1
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
       },
       "complete": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       }
@@ -252,20 +252,20 @@
       "visitor": {
         "value": 0,
         "note": "HTTP 400; treated as 0",
-        "previous": 2,
-        "delta": -2
+        "previous": 0,
+        "delta": 0
       },
       "view": {
-        "value": 3,
-        "note": "HTTP 200",
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
         "previous": 3,
-        "delta": 0
+        "delta": -3
       },
       "start": {
         "value": 0,
         "note": "HTTP 400; treated as 0",
-        "previous": 1,
-        "delta": -1
+        "previous": 0,
+        "delta": 0
       },
       "complete": {
         "value": 0,
@@ -277,26 +277,26 @@
     "ui-copy-stress": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
-        "value": 1,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
         "previous": 1,
-        "delta": 0
+        "delta": -1
       },
       "view": {
         "value": 1,
-        "note": "HTTP 200",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 1,
         "delta": 0
       },
       "start": {
-        "value": 1,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "value": 0,
+        "note": "HTTP 400; treated as 0",
         "previous": 1,
-        "delta": 0
+        "delta": -1
       },
       "complete": {
         "value": 0,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "note": "HTTP 400; treated as 0",
         "previous": 0,
         "delta": 0
       }
@@ -305,15 +305,15 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 4,
-        "delta": -4
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
       },
       "view": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 4,
-        "delta": -4
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
       },
       "start": {
         "value": 0,
@@ -323,7 +323,7 @@
       },
       "complete": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       }
@@ -350,7 +350,7 @@
       },
       "complete": {
         "value": 2,
-        "note": "HTTP 200",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 2,
         "delta": 0
       }
@@ -365,7 +365,7 @@
       },
       "view": {
         "value": 3,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "note": "HTTP 200",
         "previous": 3,
         "delta": 0
       },
@@ -386,7 +386,7 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 4,
-        "note": "HTTP 200",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 4,
         "delta": 0
       },
@@ -404,7 +404,7 @@
       },
       "complete": {
         "value": 3,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "note": "HTTP 200",
         "previous": 3,
         "delta": 0
       }
@@ -413,15 +413,15 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       },
       "view": {
         "value": 2,
         "note": "HTTP 200",
-        "previous": 0,
-        "delta": 2
+        "previous": 2,
+        "delta": 0
       },
       "start": {
         "value": 0,
@@ -431,18 +431,18 @@
       },
       "complete": {
         "value": 1,
-        "note": "HTTP 200",
-        "previous": 0,
-        "delta": 1
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 1,
+        "delta": 0
       }
     },
     "sprite-tempo": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 4,
-        "note": "HTTP 200",
-        "previous": 0,
-        "delta": 4
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 4,
+        "delta": 0
       },
       "view": {
         "value": 0,
@@ -452,9 +452,9 @@
       },
       "start": {
         "value": 1,
-        "note": "HTTP 200",
-        "previous": 0,
-        "delta": 1
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 1,
+        "delta": 0
       },
       "complete": {
         "value": 0,
@@ -467,25 +467,25 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 3,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "note": "HTTP 200",
         "previous": 3,
         "delta": 0
       },
       "view": {
         "value": 4,
-        "note": "HTTP 200",
-        "previous": 0,
-        "delta": 4
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 4,
+        "delta": 0
       },
       "start": {
         "value": 2,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "note": "HTTP 200",
         "previous": 2,
         "delta": 0
       },
       "complete": {
         "value": 0,
-        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "note": "HTTP 400; treated as 0",
         "previous": 0,
         "delta": 0
       }
@@ -494,13 +494,13 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
-        "previous": 2,
-        "delta": -2
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
+        "previous": 0,
+        "delta": 0
       },
       "view": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       },
@@ -512,7 +512,7 @@
       },
       "complete": {
         "value": 0,
-        "note": "HTTP 400; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       }

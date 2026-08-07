@@ -1,5 +1,16 @@
 [
   {
+    "id": "020-control-deck",
+    "title": "Control Deck",
+    "path": "/services/control-deck/",
+    "published_at": "2026-08-07T04:18:28Z",
+    "created_at": "2026-08-07T04:18:28Z",
+    "status": "active",
+    "hypothesis": "ゲーム操作のデバイス別割り当てを一覧化して競合と必須入力の未設定を自動検査できれば、ゲーム制作者が入力実装前後のレビューと端末別テスト整理にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "019-economy-tide",
     "title": "Economy Tide",
     "path": "/services/economy-tide/",
