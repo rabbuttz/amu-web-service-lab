@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ゲームのチュートリアル手順を時間軸に並べ、未検証の操作や説明過多を検査する無料ツール"><title>Onboarding Pulse｜チュートリアル設計診断</title><link rel="stylesheet" href="style.css"></head>
+<body><main><header><a href="../../">← 実験室</a><span>NO LOGIN / LOCAL ONLY</span></header>
+<section class="hero"><p class="eyebrow">TUTORIAL BEAT AUDITOR</p><h1>教えた操作が、<br>試されているか。</h1><p>チュートリアルの説明・練習・確認・報酬を時間軸に並べ、説明過多や未確認の操作を実装前に見つける。入力内容は端末内だけで処理するよ。</p></section>
+<section class="workspace"><div class="panel editor"><div class="panel-head"><div><p class="eyebrow">BEAT SCRIPT</p><h2>進行表</h2></div><button id="analyze">設計を診断</button></div><p class="syntax"><code>秒数 | 種類 | 操作名 | 内容</code><br>種類: <code>teach</code> <code>practice</code> <code>test</code> <code>reward</code> <code>story</code></p><textarea id="script" spellcheck="false">8 | story | 導入 | 村長から依頼を受ける
+6 | teach | 移動 | WASDで光る地点へ移動
+12 | practice | 移動 | 広場まで歩く
+5 | teach | 回避 | Spaceで攻撃を避ける
+5 | teach | 攻撃 | クリックで剣を振る
+15 | test | 回避 | 敵の予備動作を見て回避
+18 | test | 攻撃 | 木人を3回攻撃
+4 | reward | 初戦 | 回復薬を獲得</textarea><div class="assumption"><label>説明が続きすぎる基準 <output id="passiveOut">15</output>秒<input id="passive" type="range" min="5" max="40" step="1" value="15"></label></div></div>
+<div class="panel results"><p class="eyebrow">ONBOARDING READOUT</p><div class="summary"><div><strong id="total">—</strong><span>総時間</span></div><div><strong id="active">—</strong><span>操作時間</span></div><div><strong id="coverage">—</strong><span>確認率</span></div><div><strong id="issues">—</strong><span>要確認</span></div></div><div id="timeline" class="timeline"></div><div class="lower"><section><h3>操作ごとの導線</h3><div id="concepts"></div></section><section><h3>診断</h3><div id="warnings"></div></section></div><div class="actions"><button id="copy" class="secondary">設計JSONをコピー</button><span id="status" role="status"></span></div></div></section>
+<section class="legend"><span><i class="teach"></i>説明</span><span><i class="practice"></i>練習</span><span><i class="test"></i>確認</span><span><i class="reward"></i>報酬</span><span><i class="story"></i>物語</span></section>
+<section class="privacy"><strong>計測について</strong><p>訪問・表示・診断開始・JSON出力完了の回数だけを匿名カウンターへ送る。進行表や設定値、個人識別情報は送信しない。カウンター障害時も診断機能は動作する。</p></section></main><script src="logic.js"></script><script src="app.js"></script></body></html>

@@ -1,5 +1,16 @@
 [
   {
+    "id": "022-onboarding-pulse",
+    "title": "Onboarding Pulse",
+    "path": "/services/onboarding-pulse/",
+    "published_at": "2026-08-07T06:51:25Z",
+    "created_at": "2026-08-07T06:51:25Z",
+    "status": "active",
+    "hypothesis": "チュートリアルの説明・練習・確認・報酬を時間軸に並べて未確認操作と受動時間を自動検査できれば、ゲーム制作者が実装前レビューと初期プレイテストの手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "021-dialogue-tempo",
     "title": "Dialogue Tempo",
     "path": "/services/dialogue-tempo/",
