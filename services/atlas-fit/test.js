@@ -1,0 +1,11 @@
+const assert=require('assert'),A=require('./logic.js');
+let p=A.parse('幅,高さ,枚数,名前\n64,32,2,button\n16,16,3,icon');assert.equal(p.sprites.length,5);assert.equal(p.errors.length,0);
+p=A.parse('0,32,1,bad\n32,32,0,bad\n32.5,16,1,bad\n16,16,5001,bad');assert.equal(p.errors.length,4);
+let r=A.pack('32,32,4,tile',{size:64,padding:0,extrude:0,rotate:false});assert.equal(r.summary.pages,1);assert.equal(r.summary.packed,4);assert.equal(r.summary.occupancy,1);
+r=A.pack('40,40,4,tile',{size:64});assert.equal(r.summary.pages,4);
+r=A.pack('80,20,1,banner',{size:64,rotate:true});assert.equal(r.summary.oversize,1);
+r=A.pack('30,20,1,wide\n20,30,1,tall',{size:64,rotate:true});assert.equal(r.summary.pages,1);assert.equal(r.pages[0].placements.length,2);assert.ok(r.pages[0].placements.some(x=>x.rotated));
+r=A.pack('60,60,1,big',{size:64,padding:2,extrude:1});assert.equal(r.summary.oversize,1);
+r=A.pack('16,16,1,a\nbad',{size:64});assert.equal(r.errors.length,1);assert.equal(r.summary.packed,1);
+const out=A.report(r);assert.equal(out.algorithm.includes('shelf'),true);assert.equal(out.pages.length,1);assert.ok(out.generated_at);
+console.log('Atlas Fit: 16 assertions passed');

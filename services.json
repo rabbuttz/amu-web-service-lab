@@ -1,5 +1,16 @@
 [
   {
+    "id": "032-atlas-fit",
+    "title": "Atlas Fit",
+    "path": "/services/atlas-fit/",
+    "published_at": "2026-08-07T18:52:05Z",
+    "created_at": "2026-08-07T18:52:05Z",
+    "status": "active",
+    "hypothesis": "スプライト寸法・枚数・余白から必要アトラス数と格納不能素材を事前試算して配置JSONに残せれば、ゲーム制作者が素材追加後のページ増加とメモリ設計の手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "031-state-route",
     "title": "State Route",
     "path": "/services/state-route/",
