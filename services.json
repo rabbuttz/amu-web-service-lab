@@ -1,5 +1,16 @@
 [
   {
+    "id": "028-load-window",
+    "title": "Load Window",
+    "path": "/services/load-window/",
+    "published_at": "2026-08-07T14:12:26Z",
+    "created_at": "2026-08-07T14:12:26Z",
+    "status": "active",
+    "hypothesis": "素材容量・必要時刻・回線条件から締切順のロード計画と遅延候補を可視化して監査JSONに残せれば、ゲーム制作者が実装後のロード待ちと容量削減の手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "027-asset-path-guard",
     "title": "Asset Path Guard",
     "path": "/services/asset-path-guard/",
