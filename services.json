@@ -1,5 +1,16 @@
 [
   {
+    "id": "036-rev-split-lens",
+    "title": "Rev Split Lens",
+    "path": "/services/rev-split-lens/",
+    "published_at": "2026-08-07T23:32:24Z",
+    "created_at": "2026-08-07T23:32:24Z",
+    "status": "active",
+    "hypothesis": "共同制作の販売前に、編集可能な販売数・控除・制作費・分配率から3ケースの参加者別受取額を確認してJSONに残せれば、クリエイターが分配条件の認識差と表計算の手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "035-camera-envelope",
     "title": "Camera Envelope",
     "path": "/services/camera-envelope/",
