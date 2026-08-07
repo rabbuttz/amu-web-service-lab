@@ -1,0 +1,18 @@
+const assert=require('assert'),L=require('./logic');
+assert.strictEqual(L.clamp('12',0,10),10);
+assert.deepStrictEqual(L.normalize({duration:5,waves:20,rest:-1,ramp:999,mix:{grunt:4,ranger:2,brute:1}}),{duration:30,waves:10,rest:0,ramp:260,mix:{grunt:4,ranger:2,brute:1}});
+assert.deepStrictEqual(L.allocate(10,{grunt:6,ranger:3,brute:1}),{grunt:6,ranger:3,brute:1});
+assert.deepStrictEqual(L.allocate(3,{grunt:0,ranger:0,brute:0}),{grunt:3,ranger:0,brute:0});
+let a=L.analyze({duration:90,waves:5,rest:5,ramp:180,mix:{grunt:6,ranger:3,brute:1}});
+assert.strictEqual(a.rows.length,5);
+assert.strictEqual(a.totalRest,20);
+assert.strictEqual(a.waveLength,14);
+assert.strictEqual(a.rows[0].count,4);
+assert.strictEqual(a.rows[4].count,7);
+assert.strictEqual(a.rows[0].start,0);
+assert.strictEqual(a.rows[4].end,90);
+assert.strictEqual(a.status,'balanced');
+a=L.analyze({duration:60,waves:4,rest:0,ramp:100,mix:{grunt:1,ranger:0,brute:0}});assert.strictEqual(a.status,'relentless');assert.strictEqual(a.restRatio,0);
+a=L.analyze({duration:60,waves:4,rest:10,ramp:100,mix:{grunt:1,ranger:0,brute:0}});assert.strictEqual(a.status,'fragmented');assert.strictEqual(a.restRatio,50);
+assert.ok(L.exportText({duration:60,waves:3,rest:5,ramp:120,mix:{grunt:1,ranger:1,brute:1}}).includes('"peakThreat"'));
+console.log('Wave Loom logic: 15 assertions passed');

@@ -1,5 +1,16 @@
 [
   {
+    "id": "017-wave-loom",
+    "title": "Wave Loom",
+    "path": "/services/wave-loom/",
+    "published_at": "2026-08-07T00:27:34Z",
+    "created_at": "2026-08-07T00:27:34Z",
+    "status": "active",
+    "hypothesis": "敵ウェーブの密度・休憩・脅威曲線を実装前に可視化して設計JSONに残せれば、ゲーム制作者が戦闘テンポの初期調整と共有にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "016-ease-curve-lab",
     "title": "Ease Curve Lab",
     "path": "/services/ease-curve-lab/",
