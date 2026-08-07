@@ -1,9 +1,36 @@
 {
-  "observed_at": "2026-08-07T15:24:17.658Z",
-  "previous_observed_at": "2026-08-07T14:22:36.401Z",
+  "observed_at": "2026-08-07T15:34:27.718Z",
+  "previous_observed_at": "2026-08-07T15:24:17.658Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
+    "voice-ceiling": {
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+      "visitor": {
+        "value": 0,
+        "note": "HTTP 404; treated as 0",
+        "previous": 0,
+        "delta": 0
+      },
+      "view": {
+        "value": 0,
+        "note": "HTTP 404; treated as 0",
+        "previous": 0,
+        "delta": 0
+      },
+      "start": {
+        "value": 0,
+        "note": "HTTP 404; treated as 0",
+        "previous": 0,
+        "delta": 0
+      },
+      "complete": {
+        "value": 0,
+        "note": "HTTP 404; treated as 0",
+        "previous": 0,
+        "delta": 0
+      }
+    },
     "load-window": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
@@ -36,8 +63,8 @@
       "visitor": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 4,
-        "delta": -4
+        "previous": 0,
+        "delta": 0
       },
       "view": {
         "value": 0,
@@ -63,14 +90,14 @@
       "visitor": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 3,
-        "delta": -3
+        "previous": 0,
+        "delta": 0
       },
       "view": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 4,
-        "delta": -4
+        "previous": 0,
+        "delta": 0
       },
       "start": {
         "value": 0,
@@ -102,8 +129,8 @@
       "start": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 2,
-        "delta": -2
+        "previous": 0,
+        "delta": 0
       },
       "complete": {
         "value": 0,
@@ -117,8 +144,8 @@
       "visitor": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 1,
-        "delta": -1
+        "previous": 0,
+        "delta": 0
       },
       "view": {
         "value": 0,
@@ -129,8 +156,8 @@
       "start": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 1,
-        "delta": -1
+        "previous": 0,
+        "delta": 0
       },
       "complete": {
         "value": 0,
@@ -150,8 +177,8 @@
       "view": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 3,
-        "delta": -3
+        "previous": 0,
+        "delta": 0
       },
       "start": {
         "value": 0,
@@ -225,8 +252,8 @@
       "visitor": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 4,
-        "delta": -4
+        "previous": 0,
+        "delta": 0
       },
       "view": {
         "value": 0,
@@ -318,8 +345,8 @@
       "start": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 1,
-        "delta": -1
+        "previous": 0,
+        "delta": 0
       },
       "complete": {
         "value": 0,
@@ -339,8 +366,8 @@
       "view": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 4,
-        "delta": -4
+        "previous": 0,
+        "delta": 0
       },
       "start": {
         "value": 0,
@@ -447,8 +474,8 @@
       "view": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 2,
-        "delta": -2
+        "previous": 0,
+        "delta": 0
       },
       "start": {
         "value": 0,
@@ -683,15 +710,15 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "HTTP 404; treated as 0",
+        "note": "TimeoutError: The operation was aborted due to timeout; previous retained",
         "previous": 0,
         "delta": 0
       },
       "view": {
         "value": 0,
         "note": "HTTP 404; treated as 0",
-        "previous": 4,
-        "delta": -4
+        "previous": 0,
+        "delta": 0
       },
       "start": {
         "value": 0,
