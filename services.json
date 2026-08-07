@@ -1,5 +1,16 @@
 [
   {
+    "id": "019-economy-tide",
+    "title": "Economy Tide",
+    "path": "/services/economy-tide/",
+    "published_at": "2026-08-07T02:59:55Z",
+    "created_at": "2026-08-07T02:59:55Z",
+    "status": "active",
+    "hypothesis": "ゲーム内通貨の流入と流出をセッション単位で重ねて枯渇・蓄積地点を可視化し設計JSONに残せれば、ゲーム制作者が初期経済バランスの検討と共有にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "018-quest-knot",
     "title": "Quest Knot",
     "path": "/services/quest-knot/",
