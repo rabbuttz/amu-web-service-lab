@@ -1,5 +1,16 @@
 [
   {
+    "id": "031-state-route",
+    "title": "State Route",
+    "path": "/services/state-route/",
+    "published_at": "2026-08-07T17:46:14Z",
+    "created_at": "2026-08-07T17:46:14Z",
+    "status": "active",
+    "hypothesis": "ゲームの状態遷移をテキストから静的監査して未到達・終了不能・行き止まり・未定義参照をJSONに残せれば、制作者が進行不能ルートと状態名の参照ミスを実装前に減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "030-pool-pressure",
     "title": "Pool Pressure",
     "path": "/services/pool-pressure/",
