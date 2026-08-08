@@ -1,5 +1,21 @@
 [
   {
+    "id": "049-price-floor-studio",
+    "title": "Price Floor Studio",
+    "path": "/services/price-floor-studio/",
+    "published_at": "2026-08-08T14:40:18Z",
+    "created_at": "2026-08-08T14:40:18Z",
+    "status": "active",
+    "hypothesis": "目標手取りから経費・非請求時間・手数料・積立・修正余力を同時に逆算して案件価格の下限をJSONに残せれば、個人クリエイターが持続不能な価格設定と見積表計算の手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "048-alpha-mip-guard",
     "title": "Alpha Mip Guard",
     "path": "/services/alpha-mip-guard/",
