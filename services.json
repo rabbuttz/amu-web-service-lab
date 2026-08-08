@@ -1,5 +1,21 @@
 [
   {
+    "id": "047-motion-comfort-kit",
+    "title": "Motion Comfort Kit",
+    "path": "/services/motion-comfort-kit/",
+    "published_at": "2026-08-08T12:18:37Z",
+    "created_at": "2026-08-08T12:18:37Z",
+    "status": "active",
+    "hypothesis": "UIアニメーションの移動・速さ・拡縮・回転・反復を事前監査し、通常版と縮減版を比較してprefers-reduced-motion対応CSSとJSONを持ち帰れれば、Web・ゲームUI制作者がアクセシビリティ対応を後付けする手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "046-channel-packer",
     "title": "Channel Packer",
     "path": "/services/channel-packer/",
