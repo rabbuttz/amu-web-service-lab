@@ -1,5 +1,21 @@
 [
   {
+    "id": "052-lod-distance-lens",
+    "title": "LOD Distance Lens",
+    "path": "/services/lod-distance-lens/",
+    "published_at": "2026-08-08T18:09:37Z",
+    "created_at": "2026-08-08T18:09:37Z",
+    "status": "active",
+    "hypothesis": "オブジェクト高・垂直FOV・LOD画面比率から切替距離と距離帯別の三角形数を即時試算してJSONに残せれば、3Dゲーム制作者がLOD設計用の表計算と実装後の過剰描画手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "051-clear-rate-lens",
     "title": "Clear Rate Lens",
     "path": "/services/clear-rate-lens/",

@@ -1,0 +1,13 @@
+const assert=require('assert');const L=require('./logic');
+const levels=L.parseLevels('LOD0,12000,60\nLOD1,5500,25\nLOD2,1600,8\nLOD3,350,2');
+assert.equal(levels.length,4);assert.equal(levels[1].threshold,.25);
+assert(Math.abs(L.relativeHeight(2,10,60)-0.173205)<.00001);
+assert(Math.abs(L.transitionDistance(2,60,.25)-6.9282)<.001);
+assert.deepEqual(L.audit(levels),[]);
+assert.equal(L.audit(L.parseLevels('LOD0,100,20\nLOD1,120,30')).length,2);
+const bands=L.parseBands('1.5,2\n5,5\n15,10\n100,20');assert.equal(bands[2].count,10);
+const result=L.analyze({objectHeight:2,fov:60,levels,bands});
+assert.deepEqual(result.rows.map(x=>x.name),['LOD0','LOD1','LOD2','Culled']);
+assert.equal(result.instances,37);assert(result.projected<result.baseline);assert(result.savedRate>.7);
+const data=L.exportData(result);assert.equal(data.lods.length,4);assert.equal(data.distance_bands[3].selected,'Culled');assert(data.summary.reduction_percent>70);
+console.log('LOD Distance Lens: 12 assertions passed');
