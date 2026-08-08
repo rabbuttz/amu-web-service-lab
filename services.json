@@ -1,5 +1,16 @@
 [
   {
+    "id": "040-pivot-patrol",
+    "title": "Pivot Patrol",
+    "path": "/services/pivot-patrol/",
+    "published_at": "2026-08-08T04:13:17Z",
+    "created_at": "2026-08-08T04:13:17Z",
+    "status": "active",
+    "hypothesis": "スプライト列の寸法とピボット座標を正規化して中央値からのずれを監査し、フレーム別の修正座標をJSONに残せれば、ゲーム制作者がアニメ再生時の微振動をエンジン上で目視修正する手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "039-tile-seam-lab",
     "title": "Tile Seam Lab",
     "path": "/services/tile-seam-lab/",
