@@ -1,5 +1,21 @@
 [
   {
+    "id": "041-alpha-margin-lab",
+    "title": "Alpha Margin Lab",
+    "path": "/services/alpha-margin-lab/",
+    "published_at": "2026-08-08T05:23:09Z",
+    "created_at": "2026-08-08T05:23:09Z",
+    "status": "active",
+    "hypothesis": "等分割スプライトシートの不透明範囲をフレームごとに検出し、余白差・空セル・端接触をJSONに残せれば、ゲーム制作者がアニメ位置ずれとテクスチャ端の手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "040-pivot-patrol",
     "title": "Pivot Patrol",
     "path": "/services/pivot-patrol/",
@@ -8,7 +24,12 @@
     "status": "active",
     "hypothesis": "スプライト列の寸法とピボット座標を正規化して中央値からのずれを監査し、フレーム別の修正座標をJSONに残せれば、ゲーム制作者がアニメ再生時の微振動をエンジン上で目視修正する手間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "039-tile-seam-lab",
@@ -19,7 +40,12 @@
     "status": "active",
     "hypothesis": "タイル画像の上下左右の画素差を反復・中央オフセット表示と一緒に監査してJSONに残せれば、ゲーム制作者がエンジン取り込み後に継ぎ目を見つけて再修正する手間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "038-safe-zone-deck",
@@ -30,7 +56,12 @@
     "status": "active",
     "hypothesis": "モバイルゲームUIの矩形を代表端末のセーフエリアに対して一括監査し、必要移動量とJSONを残せれば、制作者がノッチやホームインジケータによる欠けを実機確認する前の手戻りを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "037-glyph-harvest",
@@ -41,7 +72,12 @@
     "status": "active",
     "hypothesis": "ゲームやWeb UIの文言から必要グリフを初出順で抽出し、文字種と想定フォント範囲の不足をTXT・JSONに残せれば、制作者がフォントアセット準備と文字欠け確認にかける手間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "036-rev-split-lens",
@@ -52,7 +88,12 @@
     "status": "active",
     "hypothesis": "共同制作の販売前に、編集可能な販売数・控除・制作費・分配率から3ケースの参加者別受取額を確認してJSONに残せれば、クリエイターが分配条件の認識差と表計算の手間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "035-camera-envelope",
@@ -63,7 +104,12 @@
     "status": "active",
     "hypothesis": "2Dゲームの必要ワールド範囲を端末比率ごとに比較し、欠けと必要Orthographic SizeをJSON・Unity C#に残せれば、制作者が画角崩れの実機確認と再計算にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "034-locale-guard",
@@ -74,7 +120,12 @@
     "status": "active",
     "hypothesis": "翻訳CSVの空欄・キー重複・プレースホルダー不一致・極端な文字量増加を実装前に監査してJSONと整形CSVに残せれば、ゲームやWebの制作者が翻訳取り込み事故とUI修正の手戻りを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "033-layer-sieve",
@@ -85,7 +136,12 @@
     "status": "active",
     "hypothesis": "物理レイヤーの役割と衝突表を同時監査して孤立・役割矛盾・過密設定をJSONとUnity C#に残せれば、ゲーム制作者が当たり判定の抜けや不要接触を実機デバッグする手戻りを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "032-atlas-fit",
@@ -96,7 +152,12 @@
     "status": "active",
     "hypothesis": "スプライト寸法・枚数・余白から必要アトラス数と格納不能素材を事前試算して配置JSONに残せれば、ゲーム制作者が素材追加後のページ増加とメモリ設計の手戻りを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "031-state-route",
@@ -107,7 +168,12 @@
     "status": "active",
     "hypothesis": "ゲームの状態遷移をテキストから静的監査して未到達・終了不能・行き止まり・未定義参照をJSONに残せれば、制作者が進行不能ルートと状態名の参照ミスを実装前に減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "030-pool-pressure",
@@ -118,7 +184,12 @@
     "status": "active",
     "hypothesis": "生成頻度・生存時間・初回バーストからオブジェクトの同時使用ピークと容量超過を試算してJSONに残せれば、ゲーム制作者がプール不足による欠落と過剰確保を実装前に減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "029-voice-ceiling",
@@ -129,7 +200,12 @@
     "status": "active",
     "hypothesis": "音声イベントの時刻・長さ・グループ・優先度から同時発音ピークとボイス制限で欠落する音を事前監査してJSONに残せれば、ゲーム制作者が実機で音が消える原因調査と優先度調整にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "028-load-window",
@@ -140,7 +216,12 @@
     "status": "active",
     "hypothesis": "素材容量・必要時刻・回線条件から締切順のロード計画と遅延候補を可視化して監査JSONに残せれば、ゲーム制作者が実装後のロード待ちと容量削減の手戻りを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "027-asset-path-guard",
@@ -151,7 +232,12 @@
     "status": "active",
     "hypothesis": "素材パス一覧から大文字小文字の衝突・予約名・危険記号・表記ゆれを検査して安全な改名案を持ち帰れれば、ゲームやWebの制作者が取り込み後の参照修正とOS間トラブルを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "026-deadline-buffer",
@@ -162,7 +248,12 @@
     "status": "active",
     "hypothesis": "工程ごとの楽観・通常・悲観時間からP50・P80・P90の完了日と目標納期内確率を算出して結果を持ち帰れれば、個人制作者や小規模チームが一律の安全率より説明可能な納期を短時間で決められる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "025-spawn-fairness",
@@ -173,7 +264,12 @@
     "status": "active",
     "hypothesis": "対戦マップのスポーンと目的地を平面上で動かし、目的地距離・最寄りスポーン間隔・外周余白を同時監査してレポートに残せれば、ゲーム制作者が実装前の初期配置レビューと距離計測にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "024-palette-signal",
@@ -184,7 +280,12 @@
     "status": "active",
     "hypothesis": "ゲームUIの配色を全組み合わせの文字コントラストと3種の色覚変換後の色差で監査しレポートに残せれば、制作者がアクセシビリティ上の見落としと実装後の配色手戻りを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "023-license-ledger",
@@ -195,7 +296,12 @@
     "status": "active",
     "hypothesis": "制作素材の作者・ライセンス・出典・変更内容を一覧検査してThird-Party Noticesの下書きに変換できれば、ゲームや作品の公開直前に帰属情報を探し直す手間と表記漏れを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "022-onboarding-pulse",
@@ -206,7 +312,12 @@
     "status": "active",
     "hypothesis": "チュートリアルの説明・練習・確認・報酬を時間軸に並べて未確認操作と受動時間を自動検査できれば、ゲーム制作者が実装前レビューと初期プレイテストの手戻りを減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "021-dialogue-tempo",
@@ -217,7 +328,12 @@
     "status": "active",
     "hypothesis": "ゲーム会話の台本から発話時間・話者比率・間・選択肢位置を可視化して分析JSONに残せれば、ゲーム制作者が仮収録や実装前のテンポ調整にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "020-control-deck",
@@ -228,7 +344,12 @@
     "status": "active",
     "hypothesis": "ゲーム操作のデバイス別割り当てを一覧化して競合と必須入力の未設定を自動検査できれば、ゲーム制作者が入力実装前後のレビューと端末別テスト整理にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "019-economy-tide",
@@ -239,7 +360,12 @@
     "status": "active",
     "hypothesis": "ゲーム内通貨の流入と流出をセッション単位で重ねて枯渇・蓄積地点を可視化し設計JSONに残せれば、ゲーム制作者が初期経済バランスの検討と共有にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "018-quest-knot",
@@ -250,7 +376,12 @@
     "status": "active",
     "hypothesis": "クエストの前提関係をテキストから可視化し循環参照と未定義参照を実装前に検査できれば、ゲーム制作者が進行不能バグの調査にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "017-wave-loom",
@@ -261,7 +392,12 @@
     "status": "active",
     "hypothesis": "敵ウェーブの密度・休憩・脅威曲線を実装前に可視化して設計JSONに残せれば、ゲーム制作者が戦闘テンポの初期調整と共有にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "016-ease-curve-lab",
@@ -272,7 +408,12 @@
     "status": "active",
     "hypothesis": "イージング曲線を等速移動と見比べながら調整しCSSとUnity向けサンプルに変換できれば、ゲーム制作者がUIや演出の緩急を実装前に短時間で決められる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "015-cooldown-weave",
@@ -283,7 +424,12 @@
     "status": "active",
     "hypothesis": "複数アクションの再使用時間・効果時間・初回発動を同じ時間軸で可視化して設計JSONに残せれば、ゲーム制作者がローテーションの空白を短時間で発見できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "014-frame-budget-lab",
@@ -294,7 +440,12 @@
     "status": "active",
     "hypothesis": "目標FPSに対するCPU内訳とGPU時間を並列トラックで可視化して設計JSONに残せれば、ゲーム制作者が最適化前のフレーム予算を短時間で合意できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "013-sfx-seed-lab",
@@ -305,7 +456,12 @@
     "status": "active",
     "hypothesis": "短いゲーム効果音をプリセットからブラウザ内で合成してWAVに持ち帰れれば、ゲーム制作者が仮音素材の探索と加工にかける時間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "012-input-window-lab",
@@ -316,7 +472,12 @@
     "status": "active",
     "hypothesis": "コヨーテタイムと先行入力を同じループコースで実際に試してJSONに残せれば、ゲーム制作者がプラットフォーマーの入力猶予を感覚と数値の両方で短時間に決められる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "011-nine-slice-lab",
@@ -327,7 +488,12 @@
     "status": "active",
     "hypothesis": "UIパネル画像の9スライス境界と複数サイズの伸縮結果を同時確認してUnity向け設定を持ち帰れれば、ゲーム制作者がUI素材の崩れを実装前に発見できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "010-hit-feel-lab",
@@ -338,7 +504,12 @@
     "status": "active",
     "hypothesis": "同じ標的を叩きながらヒットストップ・揺れ・フラッシュ・拡縮を比較してJSONに残せれば、ゲーム制作者が打撃フィードバックの初期値を短時間で決められる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "009-ui-copy-stress",
@@ -349,7 +520,12 @@
     "status": "active",
     "hypothesis": "UI文言を擬似ローカライズして表示幅ごとに判定できれば、ゲームやWebサービスの翻訳前に文字あふれリスクを低コストで発見できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "008-key-art-cropper",
@@ -359,7 +535,12 @@
     "status": "active",
     "hypothesis": "1枚のキービジュアルを主要な縦横比で同時比較しPNGに残せれば、ゲーム制作者がストア画像の構図崩れを実装前に発見できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "007-pity-curve",
@@ -369,7 +550,12 @@
     "status": "active",
     "hypothesis": "ドロップ率を平均値だけでなく累積分布と未入手人数で見せれば、ゲーム制作者が天井と確率上昇を短時間で調整できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "001-focus-familiar",
@@ -378,7 +564,12 @@
     "published_at": "2026-08-06",
     "status": "active",
     "hypothesis": "短い集中タイマーに収集ループを加えると再訪が増える",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "002-scope-canvas",
@@ -388,7 +579,12 @@
     "status": "active",
     "hypothesis": "制作依頼前に納品物・修正・利用範囲を可視化できれば、クリエイターと依頼者の認識合わせの手間を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "003-booth-balance",
@@ -398,7 +594,12 @@
     "status": "active",
     "hypothesis": "イベント出店の損益分岐と需要感度を同時に見せれば、クリエイターが持込数と予算を短時間で判断できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "004-sprite-tempo",
@@ -408,7 +609,12 @@
     "status": "active",
     "hypothesis": "スプライトアニメの速度を同じ画面で比較できれば、ゲーム制作者が感覚的なFPS調整を短時間で確定できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "005-patch-note-forge",
@@ -418,7 +624,12 @@
     "status": "active",
     "hypothesis": "生のコミットログを公開向けの分類済みMarkdownへ端末内で変換できれば、ゲームやWebサービスの更新告知作成を短縮できる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   },
   {
     "id": "006-save-schema-lens",
@@ -428,6 +639,11 @@
     "status": "active",
     "hypothesis": "更新前後のJSONセーブ例から破壊的なスキーマ差分と移行チェックリストを端末内で作れれば、ゲームやWebアプリのデータ更新事故を減らせる",
     "primary_metric": "complete/start",
-    "metrics": ["visitor", "view", "start", "complete"]
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
   }
 ]
