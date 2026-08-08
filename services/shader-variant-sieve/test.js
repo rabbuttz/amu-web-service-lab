@@ -1,0 +1,11 @@
+const assert=require('assert'),S=require('./logic.js');
+const groups=S.parseGroups('LIGHTING = UNLIT | LIT | TOON\nSHADOW = OFF | HARD | SOFT');
+assert.equal(groups.length,2);assert.deepEqual(groups[1].options,['OFF','HARD','SOFT']);
+assert.deepEqual(S.parseToggles('EMISSION, PARALLAX\nFOG'),['EMISSION','PARALLAX','FOG']);
+assert.deepEqual(S.parseRules('TOON + PARALLAX'),[['TOON','PARALLAX']]);
+const result=S.analyze({groups,toggles:['EMISSION','PARALLAX','FOG'],rules:[['TOON','PARALLAX']],passes:2,platforms:2});
+assert.equal(result.theoreticalCombinations,72);assert.equal(result.blocked,12);assert.equal(result.combinations,60);assert.equal(result.variants,240);assert.equal(result.reduction,1/6);assert.equal(result.level,'low');
+const off=S.analyze({groups:S.parseGroups('MODE = OFF | LIT'),toggles:[],rules:[],passes:1,platforms:1});assert.deepEqual(off.examples[0],[]);assert.deepEqual(off.examples[1],['LIT']);
+assert.throws(()=>S.parseGroups('BROKEN'),/形式/);assert.throws(()=>S.analyze({groups:[],toggles:[]}),/1つ以上/);assert.throws(()=>S.enumerate([],Array(19).fill(0).map((_,i)=>'K'+i)),/超える/);
+const exported=S.exportData(result);assert.equal(exported.summary.estimated_variants,240);assert.equal(exported.checklist.length,4);
+console.log('PASS shader-variant-sieve: parser, OFF handling, exclusion counting, multipliers, cap, export');
