@@ -1,5 +1,21 @@
 [
   {
+    "id": "050-scope-shift-note",
+    "title": "Scope Shift Note",
+    "path": "/services/scope-shift-note/",
+    "published_at": "2026-08-08T15:49:45Z",
+    "created_at": "2026-08-08T15:49:45Z",
+    "status": "active",
+    "hypothesis": "制作途中の変更を消化済み修正枠・追加範囲・急ぎ加算・納期影響に分けて合意用Markdownへ変換できれば、個人クリエイターが無償の追加対応と再見積作成の手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "049-price-floor-studio",
     "title": "Price Floor Studio",
     "path": "/services/price-floor-studio/",

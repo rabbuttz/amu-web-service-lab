@@ -1,0 +1,5 @@
+const assert=require('assert');const S=require('./logic.js');
+const r=S.calculate({originalQuote:120000,hourlyRate:6000,includedHours:4,usedHours:2,dailyHours:4,urgencyPercent:25,items:[{name:'追加案',hours:3,scope:'outside'},{name:'微調整',hours:3,scope:'included'}]});
+assert.strictEqual(r.remainingIncluded,2);assert.strictEqual(r.coveredHours,2);assert.strictEqual(r.overflowHours,1);assert.strictEqual(r.outsideHours,3);assert.strictEqual(r.billableHours,4);assert.strictEqual(r.baseAdditional,24000);assert.strictEqual(r.urgencyFee,6000);assert.strictEqual(r.additionalFee,30000);assert.strictEqual(r.revisedQuote,150000);assert.strictEqual(r.scheduleDays,1);assert(S.markdown(r).includes('¥30,000'));assert(S.markdown(r).includes('追加案'));
+const covered=S.calculate({includedHours:5,usedHours:1,hourlyRate:9000,dailyHours:2,items:[{name:'修正',hours:2,scope:'included'}]});assert.strictEqual(covered.billableHours,0);assert.strictEqual(covered.additionalFee,0);assert.strictEqual(covered.scheduleDays,0);
+console.log('PASS scope-shift-note: 15 assertions; revision allowance, overflow, outside scope, urgency fee, schedule and Markdown verified');
