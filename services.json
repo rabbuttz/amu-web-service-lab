@@ -1,5 +1,21 @@
 [
   {
+    "id": "042-texture-budget-lens",
+    "title": "Texture Budget Lens",
+    "path": "/services/texture-budget-lens/",
+    "published_at": "2026-08-08T06:30:27Z",
+    "created_at": "2026-08-08T06:30:27Z",
+    "status": "active",
+    "hypothesis": "ゲーム用画像をMax Size別に縮小し、拡大プレビュー・細部保持率・形式別GPUメモリ概算を同時比較してJSONに残せれば、制作者が画質と容量の妥協点をエンジン取り込み前に短時間で選べる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "041-alpha-margin-lab",
     "title": "Alpha Margin Lab",
     "path": "/services/alpha-margin-lab/",
