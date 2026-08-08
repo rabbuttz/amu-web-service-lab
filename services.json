@@ -1,5 +1,21 @@
 [
   {
+    "id": "048-alpha-mip-guard",
+    "title": "Alpha Mip Guard",
+    "path": "/services/alpha-mip-guard/",
+    "published_at": "2026-08-08T13:31:17Z",
+    "created_at": "2026-08-08T13:31:17Z",
+    "status": "active",
+    "hypothesis": "カットアウト画像をミップ縮小し、Alpha Cutoff後の被覆損失とレベル別補正値を端末内で確認してJSONに残せれば、ゲーム制作者が草・葉・フェンスの遠距離消失をエンジン取り込み前に発見できる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "047-motion-comfort-kit",
     "title": "Motion Comfort Kit",
     "path": "/services/motion-comfort-kit/",
