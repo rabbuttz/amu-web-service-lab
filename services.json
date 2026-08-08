@@ -1,5 +1,21 @@
 [
   {
+    "id": "055-animation-event-guard",
+    "title": "Animation Event Guard",
+    "path": "/services/animation-event-guard/",
+    "published_at": "2026-08-08T21:41:18Z",
+    "created_at": "2026-08-08T21:41:18Z",
+    "status": "active",
+    "hypothesis": "長さの異なるアニメーションクリップのイベント時刻を正規化し、必須イベント欠落・重複・タイミング差をJSONに残せれば、ゲーム制作者がAnimation Eventの目視比較と実機での発火漏れ調査を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "054-draw-call-weaver",
     "title": "Draw Call Weaver",
     "path": "/services/draw-call-weaver/",
