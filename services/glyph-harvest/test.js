@@ -1,0 +1,13 @@
+const assert=require('assert'),G=require('./logic');
+let r=G.analyze('開始 Start\n開始 🚀',['ascii','japanese']);
+assert.equal(r.glyph_text,'開始Star🚀');
+assert.equal(r.summary.unique_glyphs,7);
+assert.equal(r.summary.missing,1);
+assert.equal(r.missing[0].glyph,'🚀');
+r=G.analyze('Cafe\u0301 Привет 한글',['ascii','latin','cyrillic']);
+assert(r.glyph_text.includes('é'));
+assert.equal(r.groups['キリル'],6);
+assert.equal(r.groups['ハングル'],2);
+assert.equal(r.summary.missing,2);
+r=G.analyze('',[]);assert.equal(r.summary.coverage,0);assert.equal(r.glyph_text,'');
+console.log('Glyph Harvest logic: 11 assertions passed');

@@ -1,9 +1,36 @@
 {
-  "observed_at": "2026-08-07T23:36:26.803Z",
-  "previous_observed_at": "2026-08-07T23:32:23.402Z",
+  "observed_at": "2026-08-08T00:44:19.751Z",
+  "previous_observed_at": "2026-08-08T00:42:17.884Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
+    "glyph-harvest": {
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+      "visitor": {
+        "value": 0,
+        "note": "Error: HTTP 410; previous retained",
+        "previous": 0,
+        "delta": 0
+      },
+      "view": {
+        "value": 0,
+        "note": "Error: HTTP 410; previous retained",
+        "previous": 0,
+        "delta": 0
+      },
+      "start": {
+        "value": 0,
+        "note": "Error: HTTP 410; previous retained",
+        "previous": 0,
+        "delta": 0
+      },
+      "complete": {
+        "value": 0,
+        "note": "Error: HTTP 410; previous retained",
+        "previous": 0,
+        "delta": 0
+      }
+    },
     "rev-split-lens": {
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
@@ -635,13 +662,13 @@
       },
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
+        "note": "Error: HTTP 429; previous retained",
         "previous": 0,
         "delta": 0
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
+        "note": "Error: HTTP 429; previous retained",
         "previous": 0,
         "delta": 0
       },
@@ -656,7 +683,7 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 429; previous retained",
+        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
         "delta": 0
       },
@@ -683,7 +710,7 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
+        "note": "Error: HTTP 429; previous retained",
         "previous": 0,
         "delta": 0
       },
@@ -701,7 +728,7 @@
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
+        "note": "Error: HTTP 429; previous retained",
         "previous": 0,
         "delta": 0
       }
@@ -743,19 +770,19 @@
       },
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
+        "note": "Error: HTTP 429; previous retained",
         "previous": 0,
         "delta": 0
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 429; previous retained",
+        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
         "delta": 0
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
+        "note": "Error: HTTP 429; previous retained",
         "previous": 0,
         "delta": 0
       }
@@ -818,7 +845,7 @@
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 429; previous retained",
+        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
         "delta": 0
       },
