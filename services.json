@@ -1,5 +1,16 @@
 [
   {
+    "id": "038-safe-zone-deck",
+    "title": "Safe Zone Deck",
+    "path": "/services/safe-zone-deck/",
+    "published_at": "2026-08-08T01:53:18Z",
+    "created_at": "2026-08-08T01:53:18Z",
+    "status": "active",
+    "hypothesis": "モバイルゲームUIの矩形を代表端末のセーフエリアに対して一括監査し、必要移動量とJSONを残せれば、制作者がノッチやホームインジケータによる欠けを実機確認する前の手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "037-glyph-harvest",
     "title": "Glyph Harvest",
     "path": "/services/glyph-harvest/",
