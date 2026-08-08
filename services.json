@@ -1,5 +1,21 @@
 [
   {
+    "id": "044-loop-seam-lab",
+    "title": "Loop Seam Lab",
+    "path": "/services/loop-seam-lab/",
+    "published_at": "2026-08-08T08:50:50Z",
+    "created_at": "2026-08-08T08:50:50Z",
+    "status": "active",
+    "hypothesis": "ゲーム用BGMや環境音の開始・終了境界を振幅差と傾き差で監査し、近傍の低ノイズ候補とクロスフェード済みWAVを端末内で作れれば、制作者がループのクリック除去にかける試行錯誤を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "043-frame-diff-lab",
     "title": "Frame Diff Lab",
     "path": "/services/frame-diff-lab/",
