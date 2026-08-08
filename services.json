@@ -1,5 +1,21 @@
 [
   {
+    "id": "054-draw-call-weaver",
+    "title": "Draw Call Weaver",
+    "path": "/services/draw-call-weaver/",
+    "published_at": "2026-08-08T20:30:33Z",
+    "created_at": "2026-08-08T20:30:33Z",
+    "status": "active",
+    "hypothesis": "描画対象をMaterial・Mesh・Lightmap・Static・Instancing条件から事前分類して概算draw callと未適用候補をJSONに残せれば、ゲーム制作者がProfiler前の集計と最適化候補探しにかける手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "053-shader-variant-sieve",
     "title": "Shader Variant Sieve",
     "path": "/services/shader-variant-sieve/",
