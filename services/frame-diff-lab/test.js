@@ -1,0 +1,10 @@
+const assert=require('assert'),T=require('./logic');
+const rgba=(pixels)=>Uint8ClampedArray.from(pixels.flatMap(v=>[v,v,v,255]));
+assert.equal(T.pixelDelta(Uint8Array.from([0,20,30,255]),Uint8Array.from([5,8,31,250]),0),12);
+let r=T.analyze(rgba([0,0,0,0]),rgba([0,30,0,30]),2,2,20,1);
+assert.equal(r.changedPixels,2);assert.equal(r.changedPercent,50);assert.deepEqual(r.bbox,{x:1,y:0,width:1,height:2});assert.equal(r.regions.length,1);assert.equal(r.regions[0].pixels,2);assert.equal(r.maxDelta,30);assert.equal(r.meanDelta,15);
+r=T.analyze(rgba([10,20]),rgba([10,20]),2,1,0,1);assert.equal(r.changedPixels,0);assert.equal(r.bbox,null);assert.deepEqual(r.regions,[]);
+const mask=Uint8Array.from([1,0,0,1,0,0,0,0,1]);assert.equal(T.connectedRegions(mask,3,3,1).length,2);assert.equal(T.connectedRegions(mask,3,3,2).length,1);
+assert.deepEqual(T.heatColor(255,true),[255,0,0,255]);assert.deepEqual(T.heatColor(0,false),[8,14,28,255]);
+assert.throws(()=>T.analyze(new Uint8Array(3),new Uint8Array(4),1,1),/RGBA/);assert.throws(()=>T.analyze(new Uint8Array(4),new Uint8Array(4),0,1),/サイズ/);
+console.log('Frame Diff Lab logic: 17 assertions passed');
