@@ -1,5 +1,21 @@
 [
   {
+    "id": "046-channel-packer",
+    "title": "Channel Packer",
+    "path": "/services/channel-packer/",
+    "published_at": "2026-08-08T11:08:29Z",
+    "created_at": "2026-08-08T11:08:29Z",
+    "status": "active",
+    "hypothesis": "4枚の白黒マップを任意のRGBAチャンネルへ割り当て、反転・定数設定と一緒にPNG・JSONへまとめられれば、ゲーム制作者が画像編集ソフトでのチャンネル操作と割当確認にかける手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "045-normal-map-compass",
     "title": "Normal Map Compass",
     "path": "/services/normal-map-compass/",
