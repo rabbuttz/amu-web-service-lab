@@ -1,0 +1,5 @@
+const assert=require('assert');const L=require('./logic.js');
+const rows=L.parseCSV('stage,attempts,clears,target_pct\n1-1,100,40,70\n1-2,100,95,70\nBoss,10,7,70');assert.strictEqual(rows.length,3);
+const out=L.analyze(rows);assert.strictEqual(out[0].signal,'hard');assert.strictEqual(out[1].signal,'easy');assert.strictEqual(out[2].signal,'uncertain');assert.strictEqual(out[0].rate,.4);assert.deepStrictEqual(L.analyze([{name:'x',attempts:5,clears:9,target:50}])[0].clears,5);
+const ci=L.wilson(50,100);assert(ci.low>.39&&ci.low<.41);assert(ci.high>.59&&ci.high<.61);const sum=L.summary(out);assert.deepStrictEqual(sum,{stages:3,attempts:210,hard:1,easy:1,uncertain:1,insufficient:0});const data=L.exportData(out);assert.strictEqual(data.method,'Wilson score interval, 95%');assert.strictEqual(data.stages[0].observed_percent,40);assert(data.stages[2].additional_attempts_for_10pp_margin>0);
+console.log('PASS clear-rate-lens: 14 assertions; CSV parsing, clamping, Wilson intervals, target signals, sample guidance and JSON export verified');

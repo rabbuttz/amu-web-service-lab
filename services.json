@@ -1,5 +1,21 @@
 [
   {
+    "id": "051-clear-rate-lens",
+    "title": "Clear Rate Lens",
+    "path": "/services/clear-rate-lens/",
+    "published_at": "2026-08-08T17:00:25Z",
+    "created_at": "2026-08-08T17:00:25Z",
+    "status": "active",
+    "hypothesis": "ステージ別の試行数・クリア数・目標率から95%信頼区間と追加観測目安を即時に出せれば、ゲーム制作者が小標本のクリア率を過信した難易度調整と表計算の準備を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "050-scope-shift-note",
     "title": "Scope Shift Note",
     "path": "/services/scope-shift-note/",
