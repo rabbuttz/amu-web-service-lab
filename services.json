@@ -1,5 +1,16 @@
 [
   {
+    "id": "077-curve-overshoot-guard",
+    "title": "Curve Overshoot Guard",
+    "path": "/services/curve-overshoot-guard/",
+    "published_at": "2026-08-09T23:05:42Z",
+    "created_at": "2026-08-09T23:05:42Z",
+    "status": "active",
+    "hypothesis": "Unity AnimationCurveのキー時刻・値・接線をCSVで監査し、意図しないオーバーシュート区間と単調補正候補を可視化できれば、制作者が一瞬の位置・音量・パラメータ跳ねを再生しながら探す手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "076-contact-sheet-studio",
     "title": "Contact Sheet Studio",
     "path": "/services/contact-sheet-studio/",
