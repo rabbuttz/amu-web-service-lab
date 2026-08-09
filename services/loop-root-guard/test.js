@@ -1,0 +1,16 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+vm.runInThisContext(fs.readFileSync(__dirname+'/logic.js','utf8'));
+const G=globalThis.LoopRootGuard;
+const rows=G.parseRows('Frame,Time,X,Z,Yaw\n0,0,0,0,0\n1,0.5,0.1,0,4\n2,1,0.2,0,8');
+assert.equal(rows.length,3);
+let r=G.analyze(rows,{mode:'inplace',positionLimit:.03,velocityLimit:.15,yawLimit:5});
+assert.equal(r.summary.displacement,.2); assert.equal(r.summary.velocityJump,0); assert.equal(r.summary.yawClosure,8);
+assert.equal(r.checks.find(x=>x.key==='position').ok,false); assert.equal(r.corrected.at(-1).x,0); assert.equal(r.corrected.at(-1).yaw,0);
+r=G.analyze(rows,{mode:'root',velocityLimit:.15,yawLimit:10});
+assert(!r.checks.some(x=>x.key==='position')); assert.equal(r.summary.score,100);
+const seamless=G.analyze(G.parseRows('0,0,0,0,359\n1,.5,0,0,0\n2,1,0,0,1'),{yawLimit:3});
+assert.equal(seamless.summary.yawClosure,2); assert.equal(G.angleDelta(359,1),2);
+assert.throws(()=>G.parseRows('0,0,0,0,0\n1,0,0,0,0\n2,1,0,0,0'),/Time/);
+assert.throws(()=>G.parseRows('0,0,0'),/5列/);
+assert(G.exportData(r).createdAt);
+console.log('Loop Root Guard: 12 assertions passed');

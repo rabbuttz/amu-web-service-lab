@@ -1,5 +1,21 @@
 [
   {
+    "id": "060-loop-root-guard",
+    "title": "Loop Root Guard",
+    "path": "/services/loop-root-guard/",
+    "published_at": "2026-08-09T03:28:06Z",
+    "created_at": "2026-08-09T03:28:06Z",
+    "status": "active",
+    "hypothesis": "フレーム別Root Transform座標からループ境界の終端位置・速度・Yaw差を即時監査し、In-place補正案をJSONに残せれば、Unityゲーム制作者が一瞬の位置跳ねや回転不連続を実機往復で切り分ける手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "059-blend-space-compass",
     "title": "Blend Space Compass",
     "path": "/services/blend-space-compass/",
