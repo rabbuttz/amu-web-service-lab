@@ -1,9 +1,36 @@
 {
-  "observed_at": "2026-08-09T08:04:33Z",
-  "previous_observed_at": "2026-08-09T07:02:10Z",
+  "observed_at": "2026-08-09T08:12:02Z",
+  "previous_observed_at": "2026-08-09T08:04:33Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
+    "gc-pace-meter": {
+      "visitor": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+      "view": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      },
+      "start": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      },
+      "complete": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      }
+    },
     "canvas-scale-deck": {
       "visitor": {
         "value": 0,
@@ -799,19 +826,19 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       }
     },
     "layer-sieve": {
@@ -819,26 +846,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       }
     },
     "atlas-fit": {
@@ -846,26 +873,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 410; previous retained"
+        "note": "HTTP 429; previous retained"
       }
     },
     "state-route": {
