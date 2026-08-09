@@ -1,5 +1,21 @@
 [
   {
+    "id": "067-bug-repro-brief",
+    "title": "Bug Repro Brief",
+    "path": "/services/bug-repro-brief/",
+    "published_at": "2026-08-09T11:29:34Z",
+    "created_at": "2026-08-09T11:29:34Z",
+    "status": "active",
+    "hypothesis": "不具合の症状・環境・頻度・再現手順・版境界を採点し、不足情報と次の比較実験をMarkdownへまとめられれば、UnityゲームやWebサービスの開発者が聞き直しと再現条件整理にかける時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "066-milestone-cashflow-map",
     "title": "Milestone Cashflow Map",
     "path": "/services/milestone-cashflow-map/",
