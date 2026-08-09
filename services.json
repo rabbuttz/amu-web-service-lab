@@ -1,5 +1,16 @@
 [
   {
+    "id": "075-rotation-wrap-guard",
+    "title": "Rotation Wrap Guard",
+    "path": "/services/rotation-wrap-guard/",
+    "published_at": "2026-08-09T20:49:34Z",
+    "created_at": "2026-08-09T20:49:34Z",
+    "status": "active",
+    "hypothesis": "時刻付きEuler角をQuaternion最短角へ変換し、±180度の見かけ上の折返しと実回転の速度・加速度スパイクを分離して補正CSVへ残せれば、Unityゲーム制作者が回転の跳ねを調べる区間と原因を短時間で絞れる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "074-audio-rolloff-lab",
     "title": "Audio Rolloff Lab",
     "path": "/services/audio-rolloff-lab/",
