@@ -1,5 +1,16 @@
 [
   {
+    "id": "074-audio-rolloff-lab",
+    "title": "Audio Rolloff Lab",
+    "path": "/services/audio-rolloff-lab/",
+    "published_at": "2026-08-09T19:36:29Z",
+    "created_at": "2026-08-09T19:36:29Z",
+    "status": "active",
+    "hypothesis": "音源レベル・環境ノイズ・識別余裕とMin / Max Distanceから距離減衰モデル別の可聴範囲・−6dB地点を比較してJSONへ残せれば、UnityゲームやWebゲームの制作者が3D音源の初期設定と実機調整の往復を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "073-telegraph-timing-lab",
     "title": "Telegraph Timing Lab",
     "path": "/services/telegraph-timing-lab/",
