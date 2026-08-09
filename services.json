@@ -1,5 +1,16 @@
 [
   {
+    "id": "076-contact-sheet-studio",
+    "title": "Contact Sheet Studio",
+    "path": "/services/contact-sheet-studio/",
+    "published_at": "2026-08-09T21:56:24Z",
+    "created_at": "2026-08-09T21:56:24Z",
+    "status": "active",
+    "hypothesis": "スクリーンショットや制作案を縦横比を保って一枚へ並べ、ファイル名付きPNGと配置JSONを端末内で作れれば、Unity・Web制作者が比較資料を画像編集ソフトで組む時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "075-rotation-wrap-guard",
     "title": "Rotation Wrap Guard",
     "path": "/services/rotation-wrap-guard/",
