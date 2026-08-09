@@ -1,0 +1,5 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');vm.runInThisContext(fs.readFileSync(__dirname+'/logic.js','utf8'));
+assert.equal(BuildDeltaLens.parseSize('1.5 MB'),1572864);assert.equal(BuildDeltaLens.parseSize('2KB'),2048);assert.equal(BuildDeltaLens.category('a/hero.PNG'),'Texture');
+const before=BuildDeltaLens.parseList('a.png, 1 MB\nb.ogg, 2 MB\nold.txt, 100 B'),after=BuildDeltaLens.parseList('a.png, 1.5 MB\nb.ogg, 2 MB\nnew.mp4, 3 MB');const r=BuildDeltaLens.analyze(before,after);
+assert.equal(r.summary.beforeTotal,3145828);assert.equal(r.summary.afterTotal,6815744);assert.equal(r.summary.delta,3669916);assert.equal(r.summary.added,1);assert.equal(r.summary.removed,1);assert.equal(r.summary.changed,1);assert.equal(r.rows[0].path,'new.mp4');assert.equal(r.categories[0].name,'Video');
+assert.throws(()=>BuildDeltaLens.parseList('bad line'),/path/);assert.throws(()=>BuildDeltaLens.parseList('a, 1KB\na, 2KB'),/重複/);console.log('Build Delta Lens logic tests: 12 assertions passed');

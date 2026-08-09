@@ -1,5 +1,21 @@
 [
   {
+    "id": "065-build-delta-lens",
+    "title": "Build Delta Lens",
+    "path": "/services/build-delta-lens/",
+    "published_at": "2026-08-09T09:15:11Z",
+    "created_at": "2026-08-09T09:15:11Z",
+    "status": "active",
+    "hypothesis": "旧版と新版のビルドファイル一覧をパスで照合し、追加・削除・増減とカテゴリ別寄与を即時監査してJSONに残せれば、Unityゲーム制作者が容量増加の原因をBuild Reportから手集計する時間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "064-gc-pace-meter",
     "title": "GC Pace Meter",
     "path": "/services/gc-pace-meter/",
