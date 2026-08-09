@@ -1,0 +1,6 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');vm.runInThisContext(fs.readFileSync(__dirname+'/logic.js','utf8'));
+const payments=MilestoneCashflowMap.parsePayments('0, 30\n30, 30\n60, 40'),expenses=MilestoneCashflowMap.parseExpenses('0, 外注着手金, 80000\n20, 素材費, 25000\n45, 外注残金, 80000');
+assert.equal(payments.length,3);assert.equal(payments[2].percent,40);assert.equal(expenses.length,3);assert.equal(expenses[1].label,'素材費');
+const r=MilestoneCashflowMap.analyze({gross:300000,fee:5,duration:60,payments,expenses});assert.equal(r.summary.netRevenue,285000);assert.equal(r.summary.totalExpenses,185000);assert.equal(r.summary.profit,100000);assert.equal(r.summary.minBalance,-19500);assert.equal(r.summary.funded,false);assert.equal(r.summary.recommendedDepositPercent,36.8);assert.equal(r.timeline.length,6);assert.equal(r.timeline[0].type,'income');
+const weak=MilestoneCashflowMap.analyze({gross:300000,fee:5,duration:60,payments:MilestoneCashflowMap.parsePayments('0, 10\n60, 90'),expenses});assert.equal(weak.summary.minBalance,-156500);assert(weak.summary.recommendedDepositPercent>64&&weak.summary.recommendedDepositPercent<66);
+assert.throws(()=>MilestoneCashflowMap.parsePayments('0, 20\n30, 20'),/100%/);assert.throws(()=>MilestoneCashflowMap.parseExpenses('bad'),/日, 項目, 金額/);console.log('Milestone Cashflow Map logic tests: 14 assertions passed');

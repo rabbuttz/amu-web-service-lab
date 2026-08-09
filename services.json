@@ -1,5 +1,21 @@
 [
   {
+    "id": "066-milestone-cashflow-map",
+    "title": "Milestone Cashflow Map",
+    "path": "/services/milestone-cashflow-map/",
+    "published_at": "2026-08-09T10:23:12Z",
+    "created_at": "2026-08-09T10:23:12Z",
+    "status": "active",
+    "hypothesis": "制作案件の入金日と外注・素材費を同じ時間軸に置き、最大持ち出し額と必要着手金率をJSONに残せれば、個人クリエイターが利益は出るのに途中で資金不足になる契約条件を見積前に発見できる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "065-build-delta-lens",
     "title": "Build Delta Lens",
     "path": "/services/build-delta-lens/",
