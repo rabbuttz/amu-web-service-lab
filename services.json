@@ -1,5 +1,16 @@
 [
   {
+    "id": "072-transform-key-sieve",
+    "title": "Transform Key Sieve",
+    "path": "/services/transform-key-sieve/",
+    "published_at": "2026-08-09T17:14:48Z",
+    "created_at": "2026-08-09T17:14:48Z",
+    "status": "active",
+    "hypothesis": "時刻付きXYZ位置サンプルから線形時間補間の許容誤差内で残すキーを抽出し、削減率・最大誤差・RMS誤差とCSVを持ち帰れれば、Unityゲーム制作者がアニメーション位置トラックの手作業による間引きと過剰キーを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "071-frame-pulse-audit",
     "title": "Frame Pulse Audit",
     "path": "/services/frame-pulse-audit/",
