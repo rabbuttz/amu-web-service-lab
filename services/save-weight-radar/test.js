@@ -1,0 +1,3 @@
+const assert=require('assert');require('./logic.js');const G=global.SaveWeightRadar;
+const json=JSON.stringify({player:{level:3,name:'abc'},items:Array.from({length:120},(_,i)=>({id:i,count:1}))});const r=G.analyze({json,slots:3,history:2,quotaKiB:10,growthBytes:100});
+assert.equal(r.total,G.bytes(JSON.parse(json)));assert.equal(r.stored,r.total*9);assert.equal(r.top[0].path,'$.items');assert(r.findings.some(x=>x.includes('120 要素')));assert(Number.isInteger(r.daysToQuota));assert(G.report(r).includes('Save Weight Radar'));assert.equal(G.formatBytes(1024),'1.0 KiB');assert.throws(()=>G.analyze({json:'{bad'}),/JSONを読み取れない/);console.log(`PASS: ${r.nodeCount} paths, ${r.total} bytes, stored ${r.stored} bytes, top ${r.top[0].path}`);

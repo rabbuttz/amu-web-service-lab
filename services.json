@@ -1,5 +1,21 @@
 [
   {
+    "id": "069-save-weight-radar",
+    "title": "Save Weight Radar",
+    "path": "/services/save-weight-radar/",
+    "published_at": "2026-08-09T13:46:29Z",
+    "created_at": "2026-08-09T13:46:29Z",
+    "status": "active",
+    "hypothesis": "JSONセーブ例のUTF-8容量をパス別に分解し、保存枠・履歴世代・日次増加を含む総量と上限到達目安をJSONへ残せれば、UnityゲームやWebゲームの制作者がセーブ肥大化とクラウド保存上限をリリース前に発見できる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "068-release-gate-deck",
     "title": "Release Gate Deck",
     "path": "/services/release-gate-deck/",
