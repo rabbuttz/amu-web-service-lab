@@ -1,6 +1,6 @@
 {
-  "observed_at": "2026-08-09T15:02:43.925Z",
-  "previous_observed_at": "2026-08-09T14:55:38.654Z",
+  "observed_at": "2026-08-09T16:04:26.807Z",
+  "previous_observed_at": "2026-08-09T15:02:43.925Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {

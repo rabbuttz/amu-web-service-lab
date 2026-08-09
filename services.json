@@ -1,5 +1,21 @@
 [
   {
+    "id": "071-frame-pulse-audit",
+    "title": "Frame Pulse Audit",
+    "path": "/services/frame-pulse-audit/",
+    "published_at": "2026-08-09T16:04:26Z",
+    "created_at": "2026-08-09T16:04:26Z",
+    "status": "active",
+    "hypothesis": "フレーム時間列からP95・P99・1% Low・予算超過率・連続スパイクを即時監査してJSONへ残せれば、UnityゲームやWebゲームの制作者が平均FPSに隠れた引っかかりを短時間で発見し、Profilerで見る区間を絞れる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "070-input-lag-ledger",
     "title": "Input Lag Ledger",
     "path": "/services/input-lag-ledger/",
