@@ -1,6 +1,6 @@
 {
-  "observed_at": "2026-08-09T05:54:58Z",
-  "previous_observed_at": "2026-08-09T05:47:44Z",
+  "observed_at": "2026-08-09T06:56:31Z",
+  "previous_observed_at": "2026-08-09T05:54:58Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
@@ -697,13 +697,13 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "rev-split-lens": {
@@ -711,26 +711,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "camera-envelope": {
@@ -738,26 +738,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "locale-guard": {
@@ -765,26 +765,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "layer-sieve": {
@@ -792,26 +792,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "atlas-fit": {
@@ -819,26 +819,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "state-route": {
@@ -846,26 +846,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "pool-pressure": {

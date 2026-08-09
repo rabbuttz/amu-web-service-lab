@@ -1,0 +1,11 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');vm.runInThisContext(fs.readFileSync(__dirname+'/logic.js','utf8'));
+const G=globalThis.CanvasScaleDeck;
+assert.equal(G.parseDevices('FHD,1920,1080').length,1);
+assert.throws(()=>G.parseDevices('broken,0,1080'),/0より大きい/);
+assert.equal(G.scaleFor(1920,1080,1920,1080,.5),1);
+assert.equal(G.scaleFor(3840,2160,1920,1080,.5),2);
+const r=G.analyze({refW:1920,refH:1080,match:.5,elementW:160,elementH:80,minimumPx:70},G.parseDevices('FHD,1920,1080\nWide,2560,1080'));
+assert.equal(r.rows[0].shortSide,80);assert.equal(r.rows[0].status,'ok');assert.equal(r.rows[1].canvasW,2217);assert.equal(r.summary.devices,2);
+const low=G.analyze({refW:1920,refH:1080,match:1,elementW:100,elementH:40,minimumPx:50},G.parseDevices('Small,1280,720'));
+assert.equal(low.rows[0].status,'small');assert.equal(low.summary.verdict,'しきい値未満あり');
+console.log('Canvas Scale Deck logic: 10 assertions passed');
