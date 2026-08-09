@@ -1,5 +1,21 @@
 [
   {
+    "id": "059-blend-space-compass",
+    "title": "Blend Space Compass",
+    "path": "/services/blend-space-compass/",
+    "published_at": "2026-08-09T02:21:16Z",
+    "created_at": "2026-08-09T02:21:16Z",
+    "status": "active",
+    "hypothesis": "2D Blend Treeのモーション座標から方向の最大空白・対向不足・中心重複・半径差を即時監査してJSONに残せれば、Unityゲーム制作者がAnimator上の目視確認と不足方向を実機往復で探す手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "058-bundle-duplicate-lens",
     "title": "Bundle Duplicate Lens",
     "path": "/services/bundle-duplicate-lens/",
