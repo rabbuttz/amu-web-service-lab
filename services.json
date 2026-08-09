@@ -1,5 +1,16 @@
 [
   {
+    "id": "073-telegraph-timing-lab",
+    "title": "Telegraph Timing Lab",
+    "path": "/services/telegraph-timing-lab/",
+    "published_at": "2026-08-09T18:27:27Z",
+    "created_at": "2026-08-09T18:27:27Z",
+    "status": "active",
+    "hypothesis": "単純反応時間を8回実測し、中央値・P90・現在の予兆時間での想定回避率・安全マージン込みの開始候補を持ち帰れれば、UnityゲームやWebゲームの制作者が攻撃予兆を勘だけで決める手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "072-transform-key-sieve",
     "title": "Transform Key Sieve",
     "path": "/services/transform-key-sieve/",
