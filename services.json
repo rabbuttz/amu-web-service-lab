@@ -1,5 +1,21 @@
 [
   {
+    "id": "062-fixed-step-radar",
+    "title": "Fixed Step Radar",
+    "path": "/services/fixed-step-radar/",
+    "published_at": "2026-08-09T05:47:45Z",
+    "created_at": "2026-08-09T05:47:45Z",
+    "status": "active",
+    "hypothesis": "フレーム時間列からFixedUpdateの多重実行・更新なし・Maximum Delta Timeによる時間欠落を可視化してJSONに残せれば、Unityゲーム制作者が重いフレーム後の物理挙動をProfilerだけで切り分ける手間を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "061-collider-fit-lab",
     "title": "Collider Fit Lab",
     "path": "/services/collider-fit-lab/",
