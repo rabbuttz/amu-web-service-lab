@@ -1,5 +1,21 @@
 [
   {
+    "id": "058-bundle-duplicate-lens",
+    "title": "Bundle Duplicate Lens",
+    "path": "/services/bundle-duplicate-lens/",
+    "published_at": "2026-08-09T01:12:21Z",
+    "created_at": "2026-08-09T01:12:21Z",
+    "status": "active",
+    "hypothesis": "Bundle別のアセットパスと容量から重複配置・共有化時の削減候補・サイズ差を即時監査してJSONに残せれば、Unityゲーム制作者がBuild Layoutの手集計と重複依存を見落とした再ビルドを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "057-lightmap-budget-deck",
     "title": "Lightmap Budget Deck",
     "path": "/services/lightmap-budget-deck/",

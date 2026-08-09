@@ -1,6 +1,6 @@
 {
-  "observed_at": "2026-08-09T00:07:57Z",
-  "previous_observed_at": "2026-08-08T22:59:18.392Z",
+  "observed_at": "2026-08-09T01:12:21Z",
+  "previous_observed_at": "2026-08-09T00:07:57Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
@@ -691,19 +691,19 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "state-route": {
@@ -711,26 +711,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "pool-pressure": {
@@ -738,26 +738,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "voice-ceiling": {
@@ -765,26 +765,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "load-window": {
@@ -792,26 +792,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "asset-path-guard": {
@@ -819,26 +819,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "deadline-buffer": {
@@ -846,26 +846,26 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       }
     },
     "spawn-fairness": {
@@ -873,7 +873,7 @@
         "value": 0,
         "previous": 0,
         "delta": 0,
-        "note": "HTTP 429; previous retained"
+        "note": "HTTP 410; previous retained"
       },
       "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
