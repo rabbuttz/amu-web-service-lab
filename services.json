@@ -1,5 +1,21 @@
 [
   {
+    "id": "057-lightmap-budget-deck",
+    "title": "Lightmap Budget Deck",
+    "path": "/services/lightmap-budget-deck/",
+    "published_at": "2026-08-09T00:05:41Z",
+    "created_at": "2026-08-09T00:05:41Z",
+    "status": "active",
+    "hypothesis": "面グループの寸法・個数・テクセル密度からライトマップ枚数・占有率・GPUメモリと予算内密度を事前試算してJSONに残せれば、3Dゲーム制作者が再ベイクを伴う密度調整の手戻りを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "056-overdraw-budget-map",
     "title": "Overdraw Budget Map",
     "path": "/services/overdraw-budget-map/",

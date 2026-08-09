@@ -15,10 +15,12 @@ def fetch(pair):
     slug, kind = pair
     url = f'https://api.counterapi.dev/v1/{NAMESPACE}/{slug}-{kind}/'
     last = None
-    for attempt in range(3):
+    # The public endpoint can return slowly or retire counters with 410. One
+    # bounded request per key keeps the hourly sweep transactional.
+    for attempt in range(1):
         try:
             req = urllib.request.Request(url, headers={'User-Agent': 'amu-web-service-lab-metrics/1.0'})
-            with urllib.request.urlopen(req, timeout=12) as response:
+            with urllib.request.urlopen(req, timeout=6) as response:
                 data = json.load(response)
                 return slug, kind, int(data.get('count', 0)), f'HTTP {response.status}'
         except urllib.error.HTTPError as exc:
@@ -32,7 +34,7 @@ def fetch(pair):
     return slug, kind, previous, f'{last}; previous retained'
 
 pairs = [(slug, kind) for slug in slugs for kind in KINDS]
-with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+with concurrent.futures.ThreadPoolExecutor(max_workers=32) as pool:
     rows = list(pool.map(fetch, pairs))
 
 now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')

@@ -1,1519 +1,1546 @@
 {
-  "observed_at": "2026-08-08T22:59:18.392Z",
-  "previous_observed_at": "2026-08-08T22:48:09.025Z",
+  "observed_at": "2026-08-09T00:07:57Z",
+  "previous_observed_at": "2026-08-08T22:59:18.392Z",
   "source": "CounterAPI unauthenticated directional counters; 400/404 treated as 0; other HTTP and transport failures retain the previous value",
   "caveat": "認証なしカウンターのため数値は方向性の参考値。検証アクセスを含み、厳密なユニーク利用者数ではない。公開24時間未満またはvisitor 5未満では継続判断を行わない。",
   "services": {
-    "overdraw-budget-map": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+    "lightmap-budget-deck": {
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      }
+    },
+    "overdraw-budget-map": {
+      "visitor": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
+      "view": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      },
+      "start": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
+      },
+      "complete": {
+        "value": 0,
+        "previous": 0,
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "animation-event-guard": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "draw-call-weaver": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "shader-variant-sieve": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "lod-distance-lens": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "clear-rate-lens": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "scope-shift-note": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "price-floor-studio": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "alpha-mip-guard": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "motion-comfort-kit": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "channel-packer": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "normal-map-compass": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "loop-seam-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "frame-diff-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "texture-budget-lens": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "alpha-margin-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "pivot-patrol": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "tile-seam-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "safe-zone-deck": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "glyph-harvest": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "rev-split-lens": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "camera-envelope": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "locale-guard": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "layer-sieve": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       }
     },
     "atlas-fit": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 410; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "state-route": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "pool-pressure": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "voice-ceiling": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "load-window": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "asset-path-guard": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "deadline-buffer": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "spawn-fairness": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "palette-signal": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "license-ledger": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "onboarding-pulse": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "dialogue-tempo": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "control-deck": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "economy-tide": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "quest-knot": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "wave-loom": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "ease-curve-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "cooldown-weave": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "frame-budget-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "sfx-seed-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "input-window-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "nine-slice-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "hit-feel-lab": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "ui-copy-stress": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "key-art-cropper": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "pity-curve": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "focus-familiar": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "scope-canvas": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "booth-balance": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "sprite-tempo": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "patch-note-forge": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     },
     "save-schema-lens": {
-      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "visitor": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
+      "traffic_label": "verification traffic may be included; exclude from traction judgement",
       "view": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "start": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       },
       "complete": {
         "value": 0,
-        "note": "Error: HTTP 410; previous retained",
         "previous": 0,
-        "delta": 0
+        "delta": 0,
+        "note": "HTTP 429; previous retained"
       }
     }
   }
