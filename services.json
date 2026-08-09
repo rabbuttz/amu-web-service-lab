@@ -1,5 +1,21 @@
 [
   {
+    "id": "070-input-lag-ledger",
+    "title": "Input Lag Ledger",
+    "path": "/services/input-lag-ledger/",
+    "published_at": "2026-08-09T14:54:50Z",
+    "created_at": "2026-08-09T14:54:50Z",
+    "status": "active",
+    "hypothesis": "入力ポーリング・ゲームフレーム・固定処理・レンダーキュー・表示更新を位相別に分解し、中央値とP95をJSONへ残せれば、UnityゲームやWebゲームの制作者が入力遅延の改善対象を実機計測前に絞れる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "069-save-weight-radar",
     "title": "Save Weight Radar",
     "path": "/services/save-weight-radar/",
