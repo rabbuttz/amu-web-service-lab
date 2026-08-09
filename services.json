@@ -1,5 +1,21 @@
 [
   {
+    "id": "068-release-gate-deck",
+    "title": "Release Gate Deck",
+    "path": "/services/release-gate-deck/",
+    "published_at": "2026-08-09T12:38:25Z",
+    "created_at": "2026-08-09T12:38:25Z",
+    "status": "active",
+    "hypothesis": "変更領域のリスクと対象環境の重要度・関連タグから、時間予算内のスモークテストと回帰確認を優先順に組んでMarkdownへ残せれば、UnityゲームやWebサービスの制作者がリリースごとの項目整理時間と重大退行の見落としを減らせる",
+    "primary_metric": "complete/start",
+    "metrics": [
+      "visitor",
+      "view",
+      "start",
+      "complete"
+    ]
+  },
+  {
     "id": "067-bug-repro-brief",
     "title": "Bug Repro Brief",
     "path": "/services/bug-repro-brief/",
