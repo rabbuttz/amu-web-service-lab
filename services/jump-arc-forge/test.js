@@ -1,0 +1,11 @@
+const assert=require('assert'),L=require('./logic.js');
+const r=L.solve({distance:12,height:2,apex:5,gravity:9.81,samples:25});
+assert(r.landingError<1e-9,'target must be reached');
+assert(Math.abs(Math.max(...r.points.map(p=>p.y))-5)<0.03,'sampled apex should be close');
+assert(r.duration>0&&r.vx>0&&r.vy>0);
+assert.strictEqual(L.report(r).samples.length,25);
+assert(L.unity(r).includes('launchVelocity'));
+assert.throws(()=>L.solve({distance:10,height:3,apex:3,gravity:9.81}),/頂点/);
+const flat=L.solve({distance:10,height:0,apex:2,gravity:10,samples:21});
+assert(Math.abs(flat.duration-2*Math.sqrt(0.4))<1e-12);
+console.log(`PASS jump arc: target error ${r.landingError.toExponential(2)}, duration ${r.duration.toFixed(3)}s, angle ${r.angle.toFixed(2)}deg, ${r.points.length} samples`);

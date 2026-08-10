@@ -1,5 +1,16 @@
 [
   {
+    "id": "079-jump-arc-forge",
+    "title": "Jump Arc Forge",
+    "path": "/services/jump-arc-forge/",
+    "published_at": "2026-08-10T01:29:40Z",
+    "created_at": "2026-08-10T01:29:40Z",
+    "status": "active",
+    "hypothesis": "水平距離・着地高低差・通したい頂点から一定重力下の初速と飛行時間を逆算し、軌道JSONとUnity向け開始値を持ち帰れれば、ゲーム制作者がジャンプや投射軌道を再生しながら調整する往復を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "078-path-pace-lab",
     "title": "Path Pace Lab",
     "path": "/services/path-pace-lab/",
