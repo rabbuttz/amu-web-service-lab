@@ -1,5 +1,16 @@
 [
   {
+    "id": "080-camera-follow-lab",
+    "title": "Camera Follow Lab",
+    "path": "/services/camera-follow-lab/",
+    "published_at": "2026-08-10T02:36:41Z",
+    "created_at": "2026-08-10T02:36:41Z",
+    "status": "active",
+    "hypothesis": "2D直交カメラの画面範囲・デッドゾーン・指数追従・速度先読みを同じ可動プレビューで比較し設定JSONを持ち帰れれば、Unity・Webゲーム制作者が追従値の初期探索と実機往復を減らせる",
+    "primary_metric": "complete/start",
+    "metrics": ["visitor", "view", "start", "complete"]
+  },
+  {
     "id": "079-jump-arc-forge",
     "title": "Jump Arc Forge",
     "path": "/services/jump-arc-forge/",

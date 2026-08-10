@@ -1,0 +1,13 @@
+const assert=require('assert'),L=require('./logic.js');
+const input={viewWidth:16,viewHeight:9,deadWidth:34,deadHeight:28,damping:.32,lookahead:.4,speed:3.2,wave:2.2,duration:8,fps:60};
+const r=L.simulate(input);
+assert.strictEqual(r.samples.length,481);
+assert(Math.abs(r.deadZone.worldWidth-5.44)<1e-12);
+assert(r.totalMove>15&&r.totalMove<40);
+assert(r.samples.at(-1).target.x>r.samples[0].target.x);
+assert(L.report(r).samples.length>70);
+const snap=L.simulate({...input,damping:0});
+assert(snap.totalMove>0);
+assert.throws(()=>L.simulate({...input,deadWidth:2}),/5〜90/);
+assert.throws(()=>L.simulate({...input,viewWidth:0}),/0より大きく/);
+console.log(`PASS camera follow: ${r.samples.length} samples, travel ${r.totalMove.toFixed(3)}, dead zone ${r.deadZone.worldWidth.toFixed(2)} x ${r.deadZone.worldHeight.toFixed(2)}`);
